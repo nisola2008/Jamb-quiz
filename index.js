@@ -18,149 +18,205 @@ let timer;
 let playerName = "";
 
 const questions = [
-  { q: "The principal bent over backwards to admit the student into school. What does this mean?", 
-    a: [
-      "Tried very hard to admit the student", 
-      "Allowed some concession in admitting the students", 
-      "Broke the school rules to admit the student", 
-      "Admitted the student through the backdoor"
-    ], 
-    correct: "Tried very hard to admit the student" 
+  {
+    q: "The mode of nutrition in which digestion is extracellular is _____",
+    a: ["Saprophytic", "Parasitic", "Holophytic", "Holozoic"],
+    correct: "Saprophytic"
   },
-
-  { q: "The students had hardly come in when the bell rang. What does this mean?", 
-    a: [
-      "Just after the students came in, the bell rang",
-      "The student found it difficult to come in, and then the bell rang",
-      "The bell rang while the students were still coming in",
-      "None of the options"
-    ], 
-    correct: "Just after the students came in, the bell rang" 
+  {
+    q: "Emergent trees are at _____ layer of the forest",
+    a: ["Upper", "Lower", "Canopy", "Understory"],
+    correct: "Upper"
   },
-
-  { q: "All our plans fell through at the last moment. What does this mean?", 
-    a: ["Were successful", "Were abandoned", "Failed", "Were exposed"], 
-    correct: "Failed" 
+  {
+    q: "The principle of survival of the fittest is regarded as _____",
+    a: ["Darwinism", "Lamarckism", "Mendelism", "Naturalism"],
+    correct: "Darwinism"
   },
-
-  { q: "After his prison experience, Etim decided to go straight. What does this mean?", 
-    a: [
-      "Hold his head up and walk with defiance",
-      "Change his religion",
-      "Live an honest life",
-      "Stop using drugs"
-    ], 
-    correct: "Live an honest life" 
+  {
+    q: "An example of Estuarine habitat is _____",
+    a: ["Pond", "Lagoon", "Ocean", "Lake"],
+    correct: "Lagoon"
   },
-
-  { q: "They did not know what to expect and so decided to play it ear by ear. What does this mean?", 
-    a: [
-      "Listen attentively to everyone",
-      "Act according to circumstances",
-      "Pretend to be deaf",
-      "Be played with them"
-    ], 
-    correct: "Act according to circumstances" 
+  {
+    q: "An edaphic factor of growth of plants is _____",
+    a: ["Soil PH", "Temperature", "Light intensity", "Humidity"],
+    correct: "Soil PH"
   },
-
-  { q: "Don't believe all _____ he has told you.", 
-    a: ["What", "Which", "That", "There"], 
-    correct: "That" 
+  {
+    q: "What is the relationship between cattle and cattle egret?",
+    a: ["Commensalism", "Mutualism", "Parasitism", "Competition"],
+    correct: "Commensalism"
   },
-
-  { q: "He succeeded _____ the odds he faced.", 
-    a: ["After", "Despite", "Even on", "In addition to"], 
-    correct: "Despite" 
+  {
+    q: "Inbreed crossing refers to the breeding of _____",
+    a: ["Unrelated species", "Closely related species", "Species with different habitats", "Genetically modified organisms"],
+    correct: "Closely related species"
   },
-
-  { q: "If I had known that he was going _____ him the book.", 
-    a: ["I should have given", "I have given", "I will have given", "I would have given"], 
-    correct: "I would have given" 
+  {
+    q: "A man of AS genotype marries a woman of AS genotype, what is the probability of having a sickle cell anemia offspring?",
+    a: ["0%", "25%", "50%", "100%"],
+    correct: "25%"
   },
-
-  { q: "During the surgery, the doctor realised that the patient's legs _____.", 
-    a: ["Had been decayed", "Have long decayed", "Had long decayed", "None of the options"], 
-    correct: "Had long decayed" 
+  {
+    q: "The effect of the lack of vascular roots of a bryophyte is _____",
+    a: ["Reduced water absorption", "Efficient nutrient transport", "Unlimited growth potential", "Improved structural support"],
+    correct: "Reduced water absorption"
   },
-
-  { q: "_____ guests enjoyed themselves at Joy's birthday party.", 
-    a: ["All of the", "All the", "Every of the", "The whole"], 
-    correct: "All the" 
+  {
+    q: "The national park of Nigeria is located at _____",
+    a: ["Ogun state", "Lagos state", "Cross River State", "Yobe State"],
+    correct: "Cross River State"
   },
-
-  { q: "For the management, your remarks amount to a slap _____ the face.", 
-    a: ["On", "Upon", "At", "In"], 
-    correct: "In" 
+  {
+    q: "A criminal can be traced through which of the following?",
+    a: ["Blood group", "Fingerprint", "Genotype", "Shoe size"],
+    correct: "Fingerprint"
   },
-
-  { q: "The chairman told members he was open _____ suggestions.", 
-    a: ["On", "About", "To", "For"], 
-    correct: "To" 
+  {
+    q: "The vegetative part of a plant is _____",
+    a: ["Leaves", "Flowers", "Stems", "Root"],
+    correct: "Leaves"
   },
-
-  { q: "The portion is to be shared between _____.", 
-    a: ["Us and them", "We and them", "Us and they", "We and they"], 
-    correct: "Us and them" 
+  {
+    q: "The immature fruits of opium poppy are _____",
+    a: ["Capsules", "Berries", "Drupes", "Achenes"],
+    correct: "Capsules"
   },
-
-  { q: "If found guilty he will _____ all the wealth he amassed illegally.", 
-    a: ["Forgo", "Abandon", "Repay", "Forfeit"], 
-    correct: "Forfeit" 
+  {
+    q: "Pneumatophores developed by white mangroves are used for _____",
+    a: ["Gaseous exchange", "Anchoring the plant in the soil", "Storing water", "Photosynthesis"],
+    correct: "Gaseous exchange"
   },
-
-  { q: "To _____ Nigerians, corruption in high places is not strange.", 
-    a: ["We", "Us", "Ours", "Ourselves"], 
-    correct: "Us" 
+  {
+    q: "Which type of cartilage is found in the external ear, epiglottis and larynx?",
+    a: ["Hyaline cartilage", "Fibrocartilage", "Elastic cartilage", "None of the above"],
+    correct: "Elastic cartilage"
   },
-
-  { q: "The man as well as his sons _____ in the band.", 
-    a: ["Plays", "Play", "Are playing", "Played"], 
-    correct: "Plays" 
+  {
+    q: "Which of these lacks a true nucleus?",
+    a: ["Amoeba", "Moss", "Rhizopus", "Bacteria"],
+    correct: "Bacteria"
   },
-
-  { q: "_____ escalating food prices, government seems to have no solution.", 
-    a: ["As regards", "With regards to", "As regard", "The regard to"], 
-    correct: "As regards" 
+  {
+    q: "Arthropods are distinguished from vertebrates because they possess _____",
+    a: ["Bones", "Chitin", "Feathers", "Scales"],
+    correct: "Chitin"
   },
-
-  { q: "The poor _____ our attention and kindness.", 
-    a: ["Deserves", "Does deserve", "Do deserve", "Deserve"], 
-    correct: "Deserve" 
+  {
+    q: "Digested food in the body is transported by _____",
+    a: ["White blood cells (WBC)", "Red blood cells (RBC)", "Platelets", "Plasma"],
+    correct: "Plasma"
   },
-
-  { q: "The conference turned out to be an enlightening _____ experience.", 
-    a: ["Five-days", "Five-day", "Five-day's", "Five days"], 
-    correct: "Five-day" 
+  {
+    q: "The breeding of related species is known as _____",
+    a: ["Inbreeding", "Self-breeding", "Outbreeding", "Cross breeding"],
+    correct: "Inbreeding"
   },
-
-  { q: "My _____ to you student is to be good.", 
-    a: ["Advise", "Advice", "Adverse", "Advance"], 
-    correct: "Advice" 
+  {
+    q: "Unicellular organisms are mostly found among _____",
+    a: ["Plants", "Animals", "Microorganisms", "Viruses"],
+    correct: "Microorganisms"
   },
-
-  { q: "People are afraid of Mr. Niyi because he is _____.", 
-    a: ["An army", "A soldier", "An army man", "Military"], 
-    correct: "A soldier" 
+  {
+    q: "The aphotic zone is characterized by _____",
+    a: ["Absence of light", "Constant sunlight", "High temperature", "High oxygen levels"],
+    correct: "Absence of light"
   },
-
-  { q: "I cannot concentrate, here is too much _____.",
-    a: ["Detraction", "Distraction", "People", "Sound"],
-    correct: "Distraction"
+  {
+    q: "Plants in a mangrove swamp have _____",
+    a: ["Spines", "Breathing roots", "Thick stems", "Large leaves"],
+    correct: "Breathing roots"
   },
-  
-   { q: "Bus ____ are going to increase. So, comuters are worried.",
-    a: ["Fees", "Rates", "Bill", "Fares"],
-    correct: "Fares"
+  {
+    q: "The highest energy level is found in _____",
+    a: ["Carbohydrates", "Proteins", "Fats and oil", "Water"],
+    correct: "Fats and oil"
   },
-
-   { q: "Chinese ____ met foreign office officials in London.",
-    a: ["Console", "Counsel", "Councel", "Consul"],
-    correct: "Consul"
+  {
+    q: "What is the relationship between zebra and lion?",
+    a: ["Parasitism", "Predation", "Symbiosis", "Commensalism"],
+    correct: "Predation"
   },
-
-   { q: "His belief that he could do this, is his ____ .",
-    a: ["Allusion", "Illusion", "Delusion", "Depict"],
-    correct: "Delusion"
+  {
+    q: "Which of the following is an example of genetic variation?",
+    a: ["Person's hair color", "A person's haircut", "A person's clothing style", "A person's shoe size"],
+    correct: "Person's hair color"
+  },
+  {
+    q: "Which of the following is an example of continuous variation?",
+    a: ["Height in humans", "Blood type in humans", "Flower color in plants", "Fur pattern in animals"],
+    correct: "Height in humans"
+  },
+  {
+    q: "The mixture of fresh water and sea water is called _____",
+    a: ["Brackish water", "Saline water", "Potable water", "Fresh water"],
+    correct: "Brackish water"
+  },
+  {
+    q: "A tree growing with broad and ever-green leaves is likely located in _____",
+    a: ["A tropical rainforest", "A desert biome", "A tundra ecosystem", "A deciduous forest"],
+    correct: "A tropical rainforest"
+  },
+  {
+    q: "Which inorganic material is needed for photosynthesis?",
+    a: ["Oxygen", "Carbon dioxide", "Nitrogen", "Iron"],
+    correct: "Carbon dioxide"
+  },
+  {
+    q: "What is the excretory organ of the earthworm?",
+    a: ["Kidneys", "Malpighian tubules", "Nephridia", "Lungs"],
+    correct: "Nephridia"
+  },
+  {
+    q: "Opium poppy produces _____",
+    a: ["Nicotine", "Quinine", "Morphine", "Caffeine"],
+    correct: "Morphine"
+  },
+  {
+    q: "Agglutination occurs when blood is passed from blood group _____",
+    a: ["A to AB", "AB to A", "O to AB", "O to A"],
+    correct: "AB to A"
+  },
+  {
+    q: "The part of the fish's body that is sensitive to vibration is _____",
+    a: ["Lateral fin", "Dorsal fin", "Gills", "Tail fin"],
+    correct: "Lateral fin"
+  },
+  {
+    q: "The bird (Woodpecker) performs which activity?",
+    a: ["Captures fast-moving prey in flight", "Probes for insects hidden in tree bark", "Sips nectar", "Catches fish in shallow water"],
+    correct: "Probes for insects hidden in tree bark"
+  },
+  {
+    q: "Which type of cartilage provides a smooth surface for joint movement and is commonly found in the ribs, trachea and bronchi?",
+    a: ["Fibrocartilage", "Elastic cartilage", "Hyaline cartilage", "Articular cartilage"],
+    correct: "Hyaline cartilage"
+  },
+  {
+    q: "The pectoral fin is the part labelled _____",
+    a: ["IV", "VII", "V", "III"],
+    correct: "VII"
+  },
+  {
+    q: "Most cells in higher animals retain their power of cell division except _____",
+    a: ["Lymphocytes", "Malpighian cells", "Nerve cells", "Germ cells"],
+    correct: "Nerve cells"
+  },
+  {
+    q: "The function of ribosomes in cells is _____",
+    a: ["Protein synthesis", "Starch synthesis", "Lipid storage", "Transport of materials"],
+    correct: "Protein synthesis"
+  },
+  {
+    q: "The membrane surrounding the vacuole in plants is called _____",
+    a: ["Plasmalemma", "Tonoplast", "Sarcolemma", "Nuclear membrane"],
+    correct: "Tonoplast"
+  },
+  {
+    q: "A man of AS genotype marries a woman of AS genotype, what is the probability of having a sickle cell anemia offspring?",
+    a: ["0%", "25%", "50%", "100%"],
+    correct: "25%"
   },
 ];
 
@@ -256,16 +312,16 @@ function showResult() {
   const categoryText = document.createElement("p");
   categoryText.classList.add("category");
 
-  if (score <= 10) {
-    categoryText.textContent = "Poor 😢 – You need more practice!";
-  } else if (score <= 15) {
-    categoryText.textContent = "Fair 🙂 – You can do better!";
+  if (score <= 15 ) {
+    categoryText.textContent = "Poor 😢 – You need more practice OLODO!";
   } else if (score <= 20) {
-    categoryText.textContent = "Good 👍 – Nice effort!";
-  } else if (score <= 24) {
-    categoryText.textContent = "Excellent 🔥 – You really know your stuff!";
-  } else if (score === 25) {
-    categoryText.textContent = "Wow 🎯 – Genius level!";
+    categoryText.textContent = "Fair 🙂 – You can do better READ!";
+  } else if (score <= 29) {
+    categoryText.textContent = "Good 👍 – Nice effort MORE EFFORT!";
+  } else if (score <= 35) {
+    categoryText.textContent = "Excellent 🔥 – You really know your stuff BRAINBOX!";
+  } else if (score === 40) {
+    categoryText.textContent = "Wow 🎯 – Genius level GURU!";
   }
 
   resultBox.appendChild(categoryText);
