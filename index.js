@@ -337,11 +337,18 @@ function showResult() {
   resultBox.appendChild(playAgainBtn);
 
 }
+function shuffleQuestions() {
+  for (let i = questions.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [questions[i], questions[j]] =[questions[j], questions[i]];
+  }
+}
 function restartQuiz() {
   clearInterval(timer);
 currentQuestion = 0;
 score = 0;
 timeLeft = 20;
+shuffleQuestions()
 startBtn.classList.add("hide");
 resultBox.classList.add("hide");
 quizBox.classList.remove("hide");
