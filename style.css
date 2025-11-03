@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( to left, rgb(221, 149, 15), green);
+  background: linear-gradient(to left, red, blue);
   color: #fff;
 }
 

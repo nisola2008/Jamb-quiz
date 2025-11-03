@@ -19,205 +19,334 @@ let playerName = "";
 
 const questions = [
   {
-    q: "The mode of nutrition in which digestion is extracellular is _____",
-    a: ["Saprophytic", "Parasitic", "Holophytic", "Holozoic"],
-    correct: "Saprophytic"
+    q: "Socialism developed as a protest against the evils of",
+    a: ["Feudalism", "Capitalism", "Fascism", "Oligarchy"],
+    correct: "Capitalism",
   },
   {
-    q: "Emergent trees are at _____ layer of the forest",
-    a: ["Upper", "Lower", "Canopy", "Understory"],
-    correct: "Upper"
+    q: "Who among the following is associated with fascism?",
+    a: ["Joseph Stalin", "Karl Marx", "Benito Mussolini", "Fredrick Engels"],
+    correct: "Benito Mussolini",
   },
   {
-    q: "The principle of survival of the fittest is regarded as _____",
-    a: ["Darwinism", "Lamarckism", "Mendelism", "Naturalism"],
-    correct: "Darwinism"
+    q: "Fascism as a system of government originated in",
+    a: ["Britain", "Germany", "France", "Italy"],
+    correct: "Italy",
   },
   {
-    q: "An example of Estuarine habitat is _____",
-    a: ["Pond", "Lagoon", "Ocean", "Lake"],
-    correct: "Lagoon"
+    q: "The instrument mostly abused by a totalitarian government is the",
+    a: ["Periodic election", "Mass media", "Military", "Youth organization"],
+    correct: "Military",
   },
   {
-    q: "An edaphic factor of growth of plants is _____",
-    a: ["Soil PH", "Temperature", "Light intensity", "Humidity"],
-    correct: "Soil PH"
+    q: "Government of the few over the majority is _____",
+    a: ["Oligarchy", "Feudalism", "Totalitarianism", "Fascism"],
+    correct: "Oligarchy",
   },
   {
-    q: "What is the relationship between cattle and cattle egret?",
-    a: ["Commensalism", "Mutualism", "Parasitism", "Competition"],
-    correct: "Commensalism"
+    q: "The central point of capitalism as expounded by Karl Marx is that _____",
+    a: [
+      "Capitalist's profit in the surplus value obtained from workers' labour",
+      "Workers are inherently incapable of being owners of their labour",
+      "Capitalists shall always increase workers' earning capacity through wages",
+      "Capitalists shall always be ready",
+    ],
+    correct:
+      "Capitalist's profit in the surplus value obtained from workers' labour",
   },
   {
-    q: "Inbreed crossing refers to the breeding of _____",
-    a: ["Unrelated species", "Closely related species", "Species with different habitats", "Genetically modified organisms"],
-    correct: "Closely related species"
+    q: "Public opinion is important because it _____",
+    a: [
+      "Tells government what action it must take",
+      "Let's government know what the people want",
+      "Allows the police to determine troublemakers",
+      "Protect minorities",
+    ],
+    correct: "Let's government know what the people want",
   },
   {
-    q: "A man of AS genotype marries a woman of AS genotype, what is the probability of having a sickle cell anemia offspring?",
-    a: ["0%", "25%", "50%", "100%"],
-    correct: "25%"
+    q: "Which branch of the government is responsible for implementing laws?",
+    a: ["The Executive", "The Legislature", "The Judiciary", "The Police"],
+    correct: "The Executive",
   },
   {
-    q: "The effect of the lack of vascular roots of a bryophyte is _____",
-    a: ["Reduced water absorption", "Efficient nutrient transport", "Unlimited growth potential", "Improved structural support"],
-    correct: "Reduced water absorption"
+    q: "Delegated legislation is the power to make laws by _____",
+    a: [
+      "Local councils when parliament is in recess",
+      "Bodies other than parliament",
+      "The international law commission",
+      "Military rulers",
+    ],
+    correct: "Bodies other than parliament",
   },
   {
-    q: "The national park of Nigeria is located at _____",
-    a: ["Ogun state", "Lagos state", "Cross River State", "Yobe State"],
-    correct: "Cross River State"
+    q: "In a unitary system of government",
+    a: [
+      "Political power is diffused",
+      "There is a high degree of centralization",
+      "There is no separation of powers",
+      "Parliament is very weak",
+    ],
+    correct: "There is a high degree of centralization",
   },
   {
-    q: "A criminal can be traced through which of the following?",
-    a: ["Blood group", "Fingerprint", "Genotype", "Shoe size"],
-    correct: "Fingerprint"
+    q: "Universal Adult Suffrage means all _____",
+    a: [
+      "Adult citizens can vote",
+      "Citizens can vote",
+      "Qualified citizens can vote",
+      "Literate citizens can vote",
+    ],
+    correct: "Qualified citizens can vote",
   },
   {
-    q: "The vegetative part of a plant is _____",
-    a: ["Leaves", "Flowers", "Stems", "Root"],
-    correct: "Leaves"
+    q: "A bill that applies to the whole population and is intended to promote the general welfare is called _____",
+    a: ["A private bill", "A decree", "An appropriation bill", "A public bill"],
+    correct: "A public bill",
   },
   {
-    q: "The immature fruits of opium poppy are _____",
-    a: ["Capsules", "Berries", "Drupes", "Achenes"],
-    correct: "Capsules"
+    q: "The rule of law implies _____",
+    a: [
+      "The rule by lawyers",
+      "That only the head of state is above the law",
+      "The absence of a military government",
+      "That no one is above the law",
+    ],
+    correct: "That no one is above the law",
   },
   {
-    q: "Pneumatophores developed by white mangroves are used for _____",
-    a: ["Gaseous exchange", "Anchoring the plant in the soil", "Storing water", "Photosynthesis"],
-    correct: "Gaseous exchange"
+    q: "A one-party system of government _____",
+    a: [
+      "Is found in Africa",
+      "Allows no official opposition",
+      "Is practiced only where the citizens share",
+      "Does not provide for a legislature",
+    ],
+    correct: "Allows no official opposition",
   },
   {
-    q: "Which type of cartilage is found in the external ear, epiglottis and larynx?",
-    a: ["Hyaline cartilage", "Fibrocartilage", "Elastic cartilage", "None of the above"],
-    correct: "Elastic cartilage"
+    q: "Constitutionalism means _____",
+    a: [
+      "The constitution is largely made up of conventions",
+      "The constitution is not easy to amend",
+      "The provision of the constitution are strictly adhered to",
+      "There is a constitutional Head of State",
+    ],
+    correct: "The provision of the constitution are strictly adhered to",
   },
   {
-    q: "Which of these lacks a true nucleus?",
-    a: ["Amoeba", "Moss", "Rhizopus", "Bacteria"],
-    correct: "Bacteria"
+    q: "Aristocracy is the system of government in which the few rule for _____",
+    a: [
+      "Their own benefit",
+      "The benefit of all",
+      "The benefit of their friends",
+      "The benefit of a few",
+    ],
+    correct: "The benefit of all",
   },
   {
-    q: "Arthropods are distinguished from vertebrates because they possess _____",
-    a: ["Bones", "Chitin", "Feathers", "Scales"],
-    correct: "Chitin"
+    q: "Presidentialism is a system of government in which _____",
+    a: [
+      "There is elected head of state who exercises actual executive powers",
+      "The head of state is not the chief executive",
+      "The executive functions are the responsibility of the entire members of a cabinet",
+      "All members of cabinet must also be members of the legislature",
+    ],
+    correct:
+      "There is elected head of state who exercises actual executive powers",
   },
   {
-    q: "Digested food in the body is transported by _____",
-    a: ["White blood cells (WBC)", "Red blood cells (RBC)", "Platelets", "Plasma"],
-    correct: "Plasma"
+    q: "A social system in which power is derived from control over land is called _____",
+    a: ["Oligarchy", "Feudalism", "Socialism", "Presidentialism"],
+    correct: "Feudalism",
   },
   {
-    q: "The breeding of related species is known as _____",
-    a: ["Inbreeding", "Self-breeding", "Outbreeding", "Cross breeding"],
-    correct: "Inbreeding"
+    q: "A system of voting in which the voters are asked a 'yes' or 'no' question on a major issue is called _____",
+    a: [
+      "'First past the post'",
+      "A referendum",
+      "An absolute majority",
+      "An indirect election",
+    ],
+    correct: "A referendum",
   },
   {
-    q: "Unicellular organisms are mostly found among _____",
-    a: ["Plants", "Animals", "Microorganisms", "Viruses"],
-    correct: "Microorganisms"
+    q: "Nigeria is NOT a member of _____",
+    a: ["The Commonwealth", "OPEC", "ECOWAS", "NATO"],
+    correct: "NATO",
   },
   {
-    q: "The aphotic zone is characterized by _____",
-    a: ["Absence of light", "Constant sunlight", "High temperature", "High oxygen levels"],
-    correct: "Absence of light"
+    q: "The electorate means _____",
+    a: [
+      "Elected members of the Assembly",
+      "Candidates for election",
+      "Electoral officers",
+      "Citizens qualified to vote",
+    ],
+    correct: "Citizens qualified to vote",
   },
   {
-    q: "Plants in a mangrove swamp have _____",
-    a: ["Spines", "Breathing roots", "Thick stems", "Large leaves"],
-    correct: "Breathing roots"
+    q: "A constitution is rigid if it _____",
+    a: [
+      "Cannot be amended",
+      "Is found only in one written document",
+      "Requires special procedures",
+      "Is changed only by judicial interpretation",
+    ],
+    correct: "Requires special procedures",
   },
   {
-    q: "The highest energy level is found in _____",
-    a: ["Carbohydrates", "Proteins", "Fats and oil", "Water"],
-    correct: "Fats and oil"
+    q: "The main objective of a pressure group is to _____",
+    a: [
+      "Win political power",
+      "Conduct free and fair elections",
+      "Mobilize support on behalf of government",
+      "Protect the interest of its members",
+    ],
+    correct: "Protect the interest of its members",
   },
   {
-    q: "What is the relationship between zebra and lion?",
-    a: ["Parasitism", "Predation", "Symbiosis", "Commensalism"],
-    correct: "Predation"
+    q: "A major difference between civilian and military government is that, civilian government is _____",
+    a: [
+      "Upright and just",
+      "Hostile to the military",
+      "Financially prudent",
+      "Accountable to the people",
+    ],
+    correct: "Accountable to the people",
   },
   {
-    q: "Which of the following is an example of genetic variation?",
-    a: ["Person's hair color", "A person's haircut", "A person's clothing style", "A person's shoe size"],
-    correct: "Person's hair color"
+    q: "One of the legal ways through which political parties can raise money for their activities is through _____",
+    a: [
+      "Fund raising",
+      "Money laundering",
+      "Corporations and labour organizations",
+      "Foreign nationals",
+    ],
+    correct: "Fund raising",
   },
   {
-    q: "Which of the following is an example of continuous variation?",
-    a: ["Height in humans", "Blood type in humans", "Flower color in plants", "Fur pattern in animals"],
-    correct: "Height in humans"
+    q: "Traditional rulers can assist local governments authorities in their development agenda by _____",
+    a: [
+      "Pitching the youth against the authorities",
+      "Mobilizing human and material resources",
+      "Organizing demonstrations",
+      "Preserving the customs of the people",
+    ],
+    correct: "Preserving the customs of the people",
   },
   {
-    q: "The mixture of fresh water and sea water is called _____",
-    a: ["Brackish water", "Saline water", "Potable water", "Fresh water"],
-    correct: "Brackish water"
+    q: "In general, constitutions are designed to provide _____",
+    a: [
+      "General arrangements, rule and national objectives within which political activities are conducted",
+      "Legal remedies for all political problems",
+      "Codes of ethics for politicians",
+      "Alternatives to military take over of elected government",
+    ],
+    correct:
+      "General arrangements, rule and national objectives within which political activities are conducted",
   },
   {
-    q: "A tree growing with broad and ever-green leaves is likely located in _____",
-    a: ["A tropical rainforest", "A desert biome", "A tundra ecosystem", "A deciduous forest"],
-    correct: "A tropical rainforest"
+    q: "Rule adjudication is a primary function of the _____",
+    a: ["Executive", "Government", "Legislature", "Judiciary"],
+    correct: "Judiciary",
   },
   {
-    q: "Which inorganic material is needed for photosynthesis?",
-    a: ["Oxygen", "Carbon dioxide", "Nitrogen", "Iron"],
-    correct: "Carbon dioxide"
+    q: "The United Kingdom adopts _____ system of government",
+    a: ["Aristocracy", "Mobocracy", "Parliamentary", "Monarchy"],
+    correct: "Parliamentary",
   },
   {
-    q: "What is the excretory organ of the earthworm?",
-    a: ["Kidneys", "Malpighian tubules", "Nephridia", "Lungs"],
-    correct: "Nephridia"
+    q: "In a military regime, the branches of government that were fixed are _____",
+    a: [
+      "Executive and legislature",
+      "Executive and the judiciary",
+      "Legislature and judiciary",
+      "Executive, Legislature and Judiciary",
+    ],
+    correct: "Executive and legislature",
   },
   {
-    q: "Opium poppy produces _____",
-    a: ["Nicotine", "Quinine", "Morphine", "Caffeine"],
-    correct: "Morphine"
+    q: "The Nigerian civil war was fought because _____",
+    a: [
+      "Biafra was ripe for independence",
+      "The Eastern region was marginalized in Nigeria",
+      "The Hausa-Fulani wanted to dominate Nigeria",
+      "Igbos were massacred in the North between September and October, 1966",
+    ],
+    correct:
+      "Igbos were massacred in the North between September and October, 1966",
   },
   {
-    q: "Agglutination occurs when blood is passed from blood group _____",
-    a: ["A to AB", "AB to A", "O to AB", "O to A"],
-    correct: "AB to A"
+    q: "Under the emirate system, the commander of the army is _____",
+    a: ["Hakimi", "Sarki Fada", "Madawaki", "Alkali"],
+    correct: "Madawaki",
   },
   {
-    q: "The part of the fish's body that is sensitive to vibration is _____",
-    a: ["Lateral fin", "Dorsal fin", "Gills", "Tail fin"],
-    correct: "Lateral fin"
+    q: "The ten non-permanent members of the security council are elected by the _____",
+    a: [
+      "General assembly",
+      "Trusteeship council",
+      "Security council",
+      "Economic and social council",
+    ],
+    correct: "General assembly",
   },
   {
-    q: "The bird (Woodpecker) performs which activity?",
-    a: ["Captures fast-moving prey in flight", "Probes for insects hidden in tree bark", "Sips nectar", "Catches fish in shallow water"],
-    correct: "Probes for insects hidden in tree bark"
+    q: "Nigeria's non-aligned policy means that she will _____",
+    a: [
+      "Have nothing to do with the super-powers",
+      "Not take side in international issues based on ideology consideration",
+      "Avoid any dealing with any country with ideological leanings",
+      "Relate only with countries of the non-aligned nations",
+    ],
+    correct: "Not take side in international issues based on ideology consideration",
   },
   {
-    q: "Which type of cartilage provides a smooth surface for joint movement and is commonly found in the ribs, trachea and bronchi?",
-    a: ["Fibrocartilage", "Elastic cartilage", "Hyaline cartilage", "Articular cartilage"],
-    correct: "Hyaline cartilage"
+    q: "Laws made by Local Governments are called _____",
+    a: [
+      "Acts of Parliament",
+      "Local Government Act",
+      "Bye-laws",
+      "Local Government Decree",
+    ],
+    correct: "Bye-laws",
   },
   {
-    q: "The pectoral fin is the part labelled _____",
-    a: ["IV", "VII", "V", "III"],
-    correct: "VII"
+    q: "In Nigeria, the foundation of federalism was laid by _____",
+    a: [
+      "Lyttleton Constitution",
+      "Clifford Constitution",
+      "Macpherson Constitution",
+      "Richards Constitution",
+    ],
+    correct: "Richards Constitution",
   },
   {
-    q: "Most cells in higher animals retain their power of cell division except _____",
-    a: ["Lymphocytes", "Malpighian cells", "Nerve cells", "Germ cells"],
-    correct: "Nerve cells"
+    q: "One of the basic functions of an electoral commission is to _____",
+    a: [
+      "Delimit constituency",
+      "Conduct elections",
+      "Register political parties and voters",
+      "Option B & Option C",
+    ],
+    correct: "Option B & Option C",
   },
   {
-    q: "The function of ribosomes in cells is _____",
-    a: ["Protein synthesis", "Starch synthesis", "Lipid storage", "Transport of materials"],
-    correct: "Protein synthesis"
+    q: "The doctrine of separation of powers is associated with _____",
+    a: ["Montesquieu", "Locke", "Marx", "Hobbes"],
+    correct: "Montesquieu",
   },
   {
-    q: "The membrane surrounding the vacuole in plants is called _____",
-    a: ["Plasmalemma", "Tonoplast", "Sarcolemma", "Nuclear membrane"],
-    correct: "Tonoplast"
+    q: "Which of the following is NOT a mode of constitutional change?",
+    a: ["Party Manifesto", "Formal Amendment", "Judicial Decision", "Statutory Revision"],
+    correct: "Party Manifesto",
   },
   {
-    q: "A man of AS genotype marries a woman of AS genotype, what is the probability of having a sickle cell anemia offspring?",
-    a: ["0%", "25%", "50%", "100%"],
-    correct: "25%"
-  },
+    q: "Which of the following best describes the role of traditional rulers during the colonial era?",
+    a: ["Were directly involved in government", "Were directly accountable to the secretary of state for the colonies", "Made laws for the people", "Served as link between the people and the government"],
+    correct: "Served as link between the people and the government",
+  }
 ];
 
 startBtn.addEventListener("click", startQuiz);
