@@ -19,333 +19,354 @@ let playerName = "";
 
 const questions = [
   {
-    q: "Socialism developed as a protest against the evils of",
-    a: ["Feudalism", "Capitalism", "Fascism", "Oligarchy"],
-    correct: "Capitalism",
+    q: "Which of the following elements will exhibit the most electronegative character?",
+    a: ["Al", "Si", "P", "S"],
+    correct: "S",
   },
   {
-    q: "Who among the following is associated with fascism?",
-    a: ["Joseph Stalin", "Karl Marx", "Benito Mussolini", "Fredrick Engels"],
-    correct: "Benito Mussolini",
+    q: "Acid hydrolysis of nitriles will yield?",
+    a: ["Alkanes", "Aldehydes", "Carboxylic acids", "Alcohols"],
+    correct: "Carboxylic acids",
   },
   {
-    q: "Fascism as a system of government originated in",
-    a: ["Britain", "Germany", "France", "Italy"],
-    correct: "Italy",
+    q: "How many isomers of C₄H₉OH will be tertiary alkanol?",
+    a: ["1", "2", "3", "4"],
+    correct: "1",
   },
   {
-    q: "The instrument mostly abused by a totalitarian government is the",
-    a: ["Periodic election", "Mass media", "Military", "Youth organization"],
-    correct: "Military",
-  },
-  {
-    q: "Government of the few over the majority is _____",
-    a: ["Oligarchy", "Feudalism", "Totalitarianism", "Fascism"],
-    correct: "Oligarchy",
-  },
-  {
-    q: "The central point of capitalism as expounded by Karl Marx is that _____",
+    q: "Which of the following makes oils distinguished from fats?",
     a: [
-      "Capitalist's profit in the surplus value obtained from workers' labour",
-      "Workers are inherently incapable of being owners of their labour",
-      "Capitalists shall always increase workers' earning capacity through wages",
-      "Capitalists shall always be ready",
+      "Oil contains a higher proportion of unsaturation",
+      "Fats contain a higher proportion of unsaturation",
+      "Oil and fats have the same proportion of unsaturation",
+      "Neither oil nor fats have unsaturation",
     ],
-    correct:
-      "Capitalist's profit in the surplus value obtained from workers' labour",
+    correct: "Oil contains a higher proportion of unsaturation",
   },
   {
-    q: "Public opinion is important because it _____",
+    q: "The characteristic crystalline shape of solid water is due to _____",
+    a: ["Covalent bonds", "Hydrogen bonds", "Ionic bonds", "Metallic bonds"],
+    correct: "Hydrogen bonds",
+  },
+  {
+    q: "The chemical formula for laughing gas is _____",
+    a: ["NO", "NO₂", "N₂O", "N₂O₅"],
+    correct: "N₂O",
+  },
+  {
+    q: "The sulphide used in coating electric fluorescent tubes is _____",
+    a: ["Iron (II) sulphide", "Sphalerite", "Zinc sulphide", "Sulphide mineral"],
+    correct: "Zinc sulphide",
+  },
+  {
+    q: "Calculate the volume in dm³ of oxygen evolved at s.t.p when a current of 5A is passed through acidified water for 772s. (Molar volume = 22.4 dm³)",
+    a: ["0.056", "0.224", "224000", "56000"],
+    correct: "0.224",
+  },
+  {
+    q: "Hydrogenation of benzene to cyclohexane is called _____",
+    a: ["Cracking", "Polymerisation", "Reforming", "Aromatization"],
+    correct: "Aromatization",
+  },
+  {
+    q: "The pollutant that contributes to the depletion of the ozone layer is _____",
+    a: ["CF", "CS", "CCl", "CFC"],
+    correct: "CFC",
+  },
+  {
+    q: "What changes sodium hydroxide pellets to liquid?",
+    a: ["Oxygen", "Water vapour", "Carbon (IV) oxide", "Nitrogen"],
+    correct: "Water vapour",
+  },
+  {
+    q: "The compound used as ‘antifreeze’ in car radiators is _____",
+    a: ["Ethanol", "Ethylene glycol", "Ethanal", "Propan-1,2-diol"],
+    correct: "Ethylene glycol",
+  },
+  {
+    q: "What are the laws that form the general gas equation?",
     a: [
-      "Tells government what action it must take",
-      "Let's government know what the people want",
-      "Allows the police to determine troublemakers",
-      "Protect minorities",
+      "Boyle’s and Charles’ laws",
+      "Boyle’s, Charles’ and Graham’s laws",
+      "Gaps between the coils",
+      "The area of the coil",
     ],
-    correct: "Let's government know what the people want",
+    correct: "Boyle’s and Charles’ laws",
   },
   {
-    q: "Which branch of the government is responsible for implementing laws?",
-    a: ["The Executive", "The Legislature", "The Judiciary", "The Police"],
-    correct: "The Executive",
-  },
-  {
-    q: "Delegated legislation is the power to make laws by _____",
+    q: "Chlorine, bromine, and iodine resemble each other in that all _____",
     a: [
-      "Local councils when parliament is in recess",
-      "Bodies other than parliament",
-      "The international law commission",
-      "Military rulers",
+      "Dissolve in alkalis",
+      "Displace each other from solutions",
+      "React violently with hydrogen",
+      "Are electron donors",
     ],
-    correct: "Bodies other than parliament",
+    correct: "Dissolve in alkalis",
   },
   {
-    q: "In a unitary system of government",
+    q: "The method suitable for separating suspended particles in a liquid is _____",
+    a: ["Decantation", "Distillation", "Centrifugation", "Chromatography"],
+    correct: "Centrifugation",
+  },
+  {
+    q: "A hydrocarbon X has molar mass 26 and 92.3% carbon. What is its molecular formula?",
+    a: ["C₂H₂", "C₂H₆", "CH₄", "C₃H₈"],
+    correct: "C₂H₂",
+  },
+  {
+    q: "Silica gel, when exposed to air, turns liquid. What kind of substance is it?",
+    a: ["Deliquescent", "Hygroscopic", "Efflorescent", "Entropy"],
+    correct: "Deliquescent",
+  },
+  {
+    q: "In an equilibrium reaction, which condition indicates maximum yield of product?",
     a: [
-      "Political power is diffused",
-      "There is a high degree of centralization",
-      "There is no separation of powers",
-      "Parliament is very weak",
+      "Equilibrium constant is very large",
+      "ΔH = TΔS",
+      "ΔH ≥ TΔS",
+      "K < 0",
     ],
-    correct: "There is a high degree of centralization",
+    correct: "Equilibrium constant is very large",
   },
   {
-    q: "Universal Adult Suffrage means all _____",
+    q: "Under high pressure, real gases do not obey gas laws because their molecules _____",
     a: [
-      "Adult citizens can vote",
-      "Citizens can vote",
-      "Qualified citizens can vote",
-      "Literate citizens can vote",
+      "Become more energetic",
+      "Have become less energetic",
+      "Become smaller",
+      "Become larger",
     ],
-    correct: "Qualified citizens can vote",
+    correct: "Have become less energetic",
   },
   {
-    q: "A bill that applies to the whole population and is intended to promote the general welfare is called _____",
-    a: ["A private bill", "A decree", "An appropriation bill", "A public bill"],
-    correct: "A public bill",
-  },
-  {
-    q: "The rule of law implies _____",
+    q: "The salt responsible for temporary hardness is _____",
     a: [
-      "The rule by lawyers",
-      "That only the head of state is above the law",
-      "The absence of a military government",
-      "That no one is above the law",
+      "Calcium sulphate",
+      "Magnesium chloride",
+      "Calcium bicarbonate",
+      "Magnesium sulphate",
     ],
-    correct: "That no one is above the law",
+    correct: "Calcium bicarbonate",
   },
   {
-    q: "A one-party system of government _____",
+    q: "Common salt (NaCl) is used to preserve foods. Which property determines its purity?",
+    a: ["Solubility", "Melting point", "Relative density", "Crystalline nature"],
+    correct: "Melting point",
+  },
+  {
+    q: "The rate of a chemical reaction is NOT affected by one of these factors:",
+    a: ["Colour", "Concentration", "Light", "Surface area"],
+    correct: "Colour",
+  },
+  {
+    q: "The functional group represented in the compound below is _____",
+    a: ["Alkanol", "Alkanal", "Alkanone", "Alkanoate"],
+    correct: "Alkanal",
+  },
+  {
+    q: "On exposure to air, a hydrated salt loses its water of crystallization. This is called _____",
+    a: ["Efflorescence", "Deliquescence", "Hydroscopy", "Hydrolysis"],
+    correct: "Efflorescence",
+  },
+  {
+    q: "Which of the following statements is true of the electrochemical series?",
     a: [
-      "Is found in Africa",
-      "Allows no official opposition",
-      "Is practiced only where the citizens share",
-      "Does not provide for a legislature",
+      "Electropositivity of metals increases down the series",
+      "Electropositivity of non-metals decreases down the series",
+      "Electronegativity decreases",
+      "Electropositivity of metals decreases down the series",
     ],
-    correct: "Allows no official opposition",
+    correct: "Electropositivity of metals decreases down the series",
   },
   {
-    q: "Constitutionalism means _____",
+    q: "Which of the following pairs are both deliquescent substances?",
     a: [
-      "The constitution is largely made up of conventions",
-      "The constitution is not easy to amend",
-      "The provision of the constitution are strictly adhered to",
-      "There is a constitutional Head of State",
+      "CaCl₂ and H₂SO₄",
+      "NaOH and MgSO₄·7H₂O",
+      "CaCl₂ and NaOH",
+      "CuO and NaCl",
     ],
-    correct: "The provision of the constitution are strictly adhered to",
+    correct: "CaCl₂ and NaOH",
   },
   {
-    q: "Aristocracy is the system of government in which the few rule for _____",
+    q: "The bond formed between H₂O and H⁺ to form H₃O⁺ is _____",
+    a: ["Dative", "Covalent", "Electrovalent", "Ionic"],
+    correct: "Dative",
+  },
+  {
+    q: "Gas molecules are said to be perfectly elastic because _____",
     a: [
-      "Their own benefit",
-      "The benefit of all",
-      "The benefit of their friends",
-      "The benefit of a few",
+      "They collide without loss of energy",
+      "They move in straight lines",
+      "Distances are negligible",
+      "Volume negligible",
     ],
-    correct: "The benefit of all",
+    correct: "They collide without loss of energy",
   },
   {
-    q: "Presidentialism is a system of government in which _____",
+    q: "A solid that absorbs water from the atmosphere and forms an aqueous solution is _____",
+    a: ["Hydrophilic", "Efflorescent", "Deliquescent", "Hygroscopic"],
+    correct: "Deliquescent",
+  },
+  {
+    q: "Which of the following can undergo both addition and substitution reactions?",
+    a: ["Benzene", "Pentane", "Propane", "Hexane"],
+    correct: "Benzene",
+  },
+  {
+    q: "The correct name for CH₃(CH₂)₄CH₂CH₂NH₂ is _____",
+    a: ["Pentanamine", "Heptanamine", "Hexanamine", "Octanamine"],
+    correct: "Heptanamine",
+  },
+  {
+    q: "2Cl⁻(aq) → Cl₂(g) + 2e⁻ represents which type of reaction?",
+    a: ["Ionization", "Oxidation", "Reduction", "Recombination"],
+    correct: "Oxidation",
+  },
+  {
+    q: "CHCl₃ + Cl₂ → HCl + CCl₄ is an example of _____",
+    a: ["Addition", "Decomposition", "Substitution", "Condensation"],
+    correct: "Substitution",
+  },
+  {
+    q: "CxHy + 4O₂ → 3CO₂ + 2H₂O. The hydrocarbon CxHy is _____",
+    a: ["Butene", "Butane", "Butyne", "Butanone"],
+    correct: "Butane",
+  },
+  {
+    q: "To drive the position of equilibrium of an endothermic reaction forward:",
     a: [
-      "There is elected head of state who exercises actual executive powers",
-      "The head of state is not the chief executive",
-      "The executive functions are the responsibility of the entire members of a cabinet",
-      "All members of cabinet must also be members of the legislature",
+      "Increase temperature",
+      "Decrease pressure",
+      "Cool down",
+      "Decrease temperature",
     ],
-    correct:
-      "There is elected head of state who exercises actual executive powers",
+    correct: "Increase temperature",
   },
   {
-    q: "A social system in which power is derived from control over land is called _____",
-    a: ["Oligarchy", "Feudalism", "Socialism", "Presidentialism"],
-    correct: "Feudalism",
+    q: "0.92g of ethanol raised 50g of water by 28.6K. Calculate the heat of combustion.",
+    a: ["+3000 kJ mol⁻¹", "+300 kJ mol⁻¹", "−300 kJ mol⁻¹", "−3000 kJ mol⁻¹"],
+    correct: "−300 kJ mol⁻¹",
   },
   {
-    q: "A system of voting in which the voters are asked a 'yes' or 'no' question on a major issue is called _____",
+    q: "The repeating unit in natural rubber is _____",
+    a: ["Alkyne", "Isoprene", "n-propene", "Neoprene"],
+    correct: "Isoprene",
+  },
+  {
+    q: "What current will deposit 2.7g of Al in 2 hours? [Al = 27, F = 96500 C mol⁻¹]",
+    a: ["32", "8", "4", "16"],
+    correct: "4",
+  },
+  {
+    q: "Steam changes the colour of anhydrous cobalt(II) chloride from _____",
+    a: ["Blue to pink", "Red to white", "White to green", "White to blue"],
+    correct: "Blue to pink",
+  },
+  {
+    q: "Which of the following will change when a catalyst is added to a reaction?",
     a: [
-      "'First past the post'",
-      "A referendum",
-      "An absolute majority",
-      "An indirect election",
+      "Activation energy",
+      "Potential energy of reactants",
+      "Heat of reaction",
+      "Potential energy of products",
     ],
-    correct: "A referendum",
+    correct: "Activation energy",
   },
   {
-    q: "Nigeria is NOT a member of _____",
-    a: ["The Commonwealth", "OPEC", "ECOWAS", "NATO"],
-    correct: "NATO",
-  },
-  {
-    q: "The electorate means _____",
+    q: "Which of the following is used to study the arrangement of particles in crystal lattices?",
     a: [
-      "Elected members of the Assembly",
-      "Candidates for election",
-      "Electoral officers",
-      "Citizens qualified to vote",
+      "A. Alpha-particles",
+      "B. Beta-particles",
+      "C. Gamma-rays",
+      "D. X-rays"
     ],
-    correct: "Citizens qualified to vote",
+    correct: "D. X-rays"
   },
   {
-    q: "A constitution is rigid if it _____",
+    q: "I. It has a varied composition from one place to another.\nII. Its constituents can be separated by physical means.\nIII. It contains unreactive noble gases.\nWhich of the above shows that air is a mixture?",
     a: [
-      "Cannot be amended",
-      "Is found only in one written document",
-      "Requires special procedures",
-      "Is changed only by judicial interpretation",
+      "A. I and II only",
+      "B. II and III only",
+      "C. I and III only",
+      "D. I, II and III"
     ],
-    correct: "Requires special procedures",
+    correct: "A. I and II only"
   },
   {
-    q: "The main objective of a pressure group is to _____",
+    q: "The chemicals used to soften hard water involves the addition of:",
     a: [
-      "Win political power",
-      "Conduct free and fair elections",
-      "Mobilize support on behalf of government",
-      "Protect the interest of its members",
+      "A. Insoluble sodium compounds which form soluble solutions of calcium and magnesium",
+      "B. Soluble sodium compounds which form soluble solutions of calcium and magnesium ions",
+      "C. Soluble sodium compounds which form insoluble precipitates of calcium and magnesium ions",
+      "D. Insoluble precipitates of calcium and magnesium ions"
     ],
-    correct: "Protect the interest of its members",
+    correct: "C. Soluble sodium compounds which form insoluble precipitates of calcium and magnesium ions"
   },
   {
-    q: "A major difference between civilian and military government is that, civilian government is _____",
+    q: "Chlorination of water for town supply is carried out to:",
     a: [
-      "Upright and just",
-      "Hostile to the military",
-      "Financially prudent",
-      "Accountable to the people",
+      "A. Make the water colourless",
+      "B. Remove germs from the water",
+      "C. Make the water tasteful",
+      "D. Remove odour from the water"
     ],
-    correct: "Accountable to the people",
+    correct: "B. Remove germs from the water"
   },
   {
-    q: "One of the legal ways through which political parties can raise money for their activities is through _____",
+    q: "The radioisotope used in industrial radiography for the rapid checking of faults in welds and castings is:",
     a: [
-      "Fund raising",
-      "Money laundering",
-      "Corporations and labour organizations",
-      "Foreign nationals",
+      "A. Carbon-14",
+      "B. Phosphorus-32",
+      "C. Cobalt-60",
+      "D. Iodine-131"
     ],
-    correct: "Fund raising",
+    correct: "C. Cobalt-60"
   },
   {
-    q: "Traditional rulers can assist local governments authorities in their development agenda by _____",
+    q: "How many unpaired electrons are in the p-orbitals of a fluorine atom?",
     a: [
-      "Pitching the youth against the authorities",
-      "Mobilizing human and material resources",
-      "Organizing demonstrations",
-      "Preserving the customs of the people",
+      "A. 3",
+      "B. 0",
+      "C. 1",
+      "D. 2"
     ],
-    correct: "Preserving the customs of the people",
+    correct: "C. 1"
   },
   {
-    q: "In general, constitutions are designed to provide _____",
+    q: "The radioactive emission with the least ionization power is:",
     a: [
-      "General arrangements, rule and national objectives within which political activities are conducted",
-      "Legal remedies for all political problems",
-      "Codes of ethics for politicians",
-      "Alternatives to military take over of elected government",
+      "A. α-particles",
+      "B. X-rays",
+      "C. γ-rays",
+      "D. β-particles"
     ],
-    correct:
-      "General arrangements, rule and national objectives within which political activities are conducted",
+    correct: "C. γ-rays"
   },
   {
-    q: "Rule adjudication is a primary function of the _____",
-    a: ["Executive", "Government", "Legislature", "Judiciary"],
-    correct: "Judiciary",
-  },
-  {
-    q: "The United Kingdom adopts _____ system of government",
-    a: ["Aristocracy", "Mobocracy", "Parliamentary", "Monarchy"],
-    correct: "Parliamentary",
-  },
-  {
-    q: "In a military regime, the branches of government that were fixed are _____",
+    q: "The shape of the carbon (IV) oxide molecule is:",
     a: [
-      "Executive and legislature",
-      "Executive and the judiciary",
-      "Legislature and judiciary",
-      "Executive, Legislature and Judiciary",
+      "A. Pyramidal",
+      "B. Linear",
+      "C. Angular",
+      "D. Tetrahedral"
     ],
-    correct: "Executive and legislature",
+    correct: "B. Linear"
   },
   {
-    q: "The Nigerian civil war was fought because _____",
+    q: "Which of the following molecules is held together by hydrogen bond?",
     a: [
-      "Biafra was ripe for independence",
-      "The Eastern region was marginalized in Nigeria",
-      "The Hausa-Fulani wanted to dominate Nigeria",
-      "Igbos were massacred in the North between September and October, 1966",
+      "A. CH₄",
+      "B. HBr",
+      "C. H₂SO₄",
+      "D. HF"
     ],
-    correct:
-      "Igbos were massacred in the North between September and October, 1966",
+    correct: "D. HF"
   },
   {
-    q: "Under the emirate system, the commander of the army is _____",
-    a: ["Hakimi", "Sarki Fada", "Madawaki", "Alkali"],
-    correct: "Madawaki",
-  },
-  {
-    q: "The ten non-permanent members of the security council are elected by the _____",
-    a: [
-      "General assembly",
-      "Trusteeship council",
-      "Security council",
-      "Economic and social council",
-    ],
-    correct: "General assembly",
-  },
-  {
-    q: "Nigeria's non-aligned policy means that she will _____",
-    a: [
-      "Have nothing to do with the super-powers",
-      "Not take side in international issues based on ideology consideration",
-      "Avoid any dealing with any country with ideological leanings",
-      "Relate only with countries of the non-aligned nations",
-    ],
-    correct: "Not take side in international issues based on ideology consideration",
-  },
-  {
-    q: "Laws made by Local Governments are called _____",
-    a: [
-      "Acts of Parliament",
-      "Local Government Act",
-      "Bye-laws",
-      "Local Government Decree",
-    ],
-    correct: "Bye-laws",
-  },
-  {
-    q: "In Nigeria, the foundation of federalism was laid by _____",
-    a: [
-      "Lyttleton Constitution",
-      "Clifford Constitution",
-      "Macpherson Constitution",
-      "Richards Constitution",
-    ],
-    correct: "Richards Constitution",
-  },
-  {
-    q: "One of the basic functions of an electoral commission is to _____",
-    a: [
-      "Delimit constituency",
-      "Conduct elections",
-      "Register political parties and voters",
-      "Option B & Option C",
-    ],
-    correct: "Option B & Option C",
-  },
-  {
-    q: "The doctrine of separation of powers is associated with _____",
-    a: ["Montesquieu", "Locke", "Marx", "Hobbes"],
-    correct: "Montesquieu",
-  },
-  {
-    q: "Which of the following is NOT a mode of constitutional change?",
-    a: ["Party Manifesto", "Formal Amendment", "Judicial Decision", "Statutory Revision"],
-    correct: "Party Manifesto",
-  },
-  {
-    q: "Which of the following best describes the role of traditional rulers during the colonial era?",
-    a: ["Were directly involved in government", "Were directly accountable to the secretary of state for the colonies", "Made laws for the people", "Served as link between the people and the government"],
-    correct: "Served as link between the people and the government",
+    q: "A solid that absorbs water from the atmosphere and forms an aqueous solution is _____",
+    a: ["Hydrophilic", "Efflorescent", "Deliquescent", "Hygroscopic"],
+    correct: "Deliquescent",
   }
 ];
 
@@ -449,8 +470,11 @@ function showResult() {
     categoryText.textContent = "Good 👍 – Nice effort MORE EFFORT!";
   } else if (score <= 35) {
     categoryText.textContent = "Excellent 🔥 – You really know your stuff BRAINBOX!";
-  } else if (score === 40) {
-    categoryText.textContent = "Wow 🎯 – Genius level GURU!";
+  } else if (score <= 40) {
+    categoryText.textContent = "Wow 🎯 – Genius level almost a GURU!";
+  }
+  else if (score <= 45) {
+    categoryText.textContent = "A Guru, take your flower";
   }
 
   resultBox.appendChild(categoryText);
