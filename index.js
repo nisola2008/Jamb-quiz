@@ -483,18 +483,18 @@ function showResult() {
   const categoryText = document.createElement("p");
   categoryText.classList.add("category");
 
-  if (score <= 15 ) {
+  if (score <= 20 ) {
     categoryText.textContent = "Poor 😢 – You need more practice OLODO!";
-  } else if (score <= 20) {
+  } else if (score <= 30) {
     categoryText.textContent = "Fair 🙂 – You can do better READ!";
-  } else if (score <= 29) {
-    categoryText.textContent = "Good 👍 – Nice effort MORE EFFORT!";
-  } else if (score <= 35) {
-    categoryText.textContent = "Excellent 🔥 – You really know your stuff BRAINBOX!";
   } else if (score <= 40) {
+    categoryText.textContent = "Good 👍 – Nice effort MORE EFFORT!";
+  } else if (score <= 50) {
+    categoryText.textContent = "Excellent 🔥 – You really know your stuff BRAINBOX!";
+  } else if (score <= 55) {
     categoryText.textContent = "Wow 🎯 – Genius level almost a GURU!";
   }
-  else if (score <= 45) {
+  else if (score <= 60) {
     categoryText.textContent = "A Guru, take your flower";
   }
 
