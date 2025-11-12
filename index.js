@@ -19,354 +19,375 @@ let playerName = "";
 
 const questions = [
   {
-    q: "Which of the following elements will exhibit the most electronegative character?",
-    a: ["Al", "Si", "P", "S"],
-    correct: "S",
+    q: "What is the force on a segment of wire that is 0.5m long and has a current of 2A, when placed in a magnetic field of 2T at an angle of 30° to the field?",
+    a: ["1.0N", "2.0N", "0.1N", "0.2N"],
+    correct: "1.0N"
   },
   {
-    q: "Acid hydrolysis of nitriles will yield?",
-    a: ["Alkanes", "Aldehydes", "Carboxylic acids", "Alcohols"],
-    correct: "Carboxylic acids",
+    q: "The mode of heat transfer that is electromagnetic in nature is _____",
+    a: ["Conduction", "Evaporation", "Convection", "Radiation"],
+    correct: "Radiation"
   },
   {
-    q: "How many isomers of C₄H₉OH will be tertiary alkanol?",
-    a: ["1", "2", "3", "4"],
-    correct: "1",
-  },
-  {
-    q: "Which of the following makes oils distinguished from fats?",
+    q: "The condition for resonance to occur in RLC series circuit is _____",
     a: [
-      "Oil contains a higher proportion of unsaturation",
-      "Fats contain a higher proportion of unsaturation",
-      "Oil and fats have the same proportion of unsaturation",
-      "Neither oil nor fats have unsaturation",
+      "When the angular frequency of the applied voltage is equal to the natural angular frequency of the circuit",
+      "When the angular frequency of the applied voltage is greater than the natural angular frequency of the circuit",
+      "When the angular frequency of the applied voltage is less than the natural angular frequency of the circuit",
+      "When the angular frequency of the applied voltage is zero"
     ],
-    correct: "Oil contains a higher proportion of unsaturation",
+    correct: "When the angular frequency of the applied voltage is equal to the natural angular frequency of the circuit"
   },
   {
-    q: "The characteristic crystalline shape of solid water is due to _____",
-    a: ["Covalent bonds", "Hydrogen bonds", "Ionic bonds", "Metallic bonds"],
-    correct: "Hydrogen bonds",
+    q: "A solid weighs 10.5N in air and 5.5N when immersed in a liquid of density 900kgm⁻³. Calculate the volume of the solid. (g = 10m/s²)",
+    a: ["1.17×10⁻⁴ m³", "5.56×10⁻⁴ m³", "3.24×10⁻⁴ m³", "2.24×10⁻⁴ m³"],
+    correct: "5.56×10⁻⁴ m³"
   },
   {
-    q: "The chemical formula for laughing gas is _____",
-    a: ["NO", "NO₂", "N₂O", "N₂O₅"],
-    correct: "N₂O",
+    q: "A uniform metre rule AB balances on a knife edge 60cm from end B when a load of 33g is kept 10cm away from the end A. What is the weight of the metre rule?",
+    a: ["40g", "55g", "66g", "37g"],
+    correct: "66g"
   },
   {
-    q: "The sulphide used in coating electric fluorescent tubes is _____",
-    a: ["Iron (II) sulphide", "Sphalerite", "Zinc sulphide", "Sulphide mineral"],
-    correct: "Zinc sulphide",
-  },
-  {
-    q: "Calculate the volume in dm³ of oxygen evolved at s.t.p when a current of 5A is passed through acidified water for 772s. (Molar volume = 22.4 dm³)",
-    a: ["0.056", "0.224", "224000", "56000"],
-    correct: "0.224",
-  },
-  {
-    q: "Hydrogenation of benzene to cyclohexane is called _____",
-    a: ["Cracking", "Polymerisation", "Reforming", "Aromatization"],
-    correct: "Aromatization",
-  },
-  {
-    q: "The pollutant that contributes to the depletion of the ozone layer is _____",
-    a: ["CF", "CS", "CCl", "CFC"],
-    correct: "CFC",
-  },
-  {
-    q: "What changes sodium hydroxide pellets to liquid?",
-    a: ["Oxygen", "Water vapour", "Carbon (IV) oxide", "Nitrogen"],
-    correct: "Water vapour",
-  },
-  {
-    q: "The compound used as ‘antifreeze’ in car radiators is _____",
-    a: ["Ethanol", "Ethylene glycol", "Ethanal", "Propan-1,2-diol"],
-    correct: "Ethylene glycol",
-  },
-  {
-    q: "What are the laws that form the general gas equation?",
+    q: "A particle in simple harmonic motion while passing through mean position will have",
     a: [
-      "Boyle’s and Charles’ laws",
-      "Boyle’s, Charles’ and Graham’s laws",
-      "Gaps between the coils",
-      "The area of the coil",
+      "Minimum kinetic energy and maximum potential energy",
+      "Maximum potential energy and minimum kinetic energy",
+      "Minimum kinetic energy and minimum potential energy",
+      "Maximum kinetic energy and minimum potential energy"
     ],
-    correct: "Boyle’s and Charles’ laws",
+    correct: "Maximum kinetic energy and minimum potential energy"
   },
   {
-    q: "Chlorine, bromine, and iodine resemble each other in that all _____",
+    q: "A pin floats on water due to the phenomenon of?",
+    a: ["Viscosity in fluid", "Surface tension", "Capillary tension", "Gravitation"],
+    correct: "Surface tension"
+  },
+  {
+    q: "(i) It converts electrical energy into mechanical energy (ii) It generates electricity (iii) It is based on the principle of electromagnetic induction (iv) It follows Fleming's left hand rule. Which statements are true for an electric motor?",
+    a: ["(i) only", "(i) and (ii) only", "(i), (ii) and (iii) only", "(i) and (iv) only"],
+    correct: "(i) and (iv) only"
+  },
+  {
+    q: "A thick glass tumbler cracks when hot water is poured into it because of?",
     a: [
-      "Dissolve in alkalis",
-      "Displace each other from solutions",
-      "React violently with hydrogen",
-      "Are electron donors",
+      "Anomalous expansion of water",
+      "Uneven expansion of the glass tumbler",
+      "Thermal expansion of water",
+      "Even expansion of the glass tumbler"
     ],
-    correct: "Dissolve in alkalis",
+    correct: "Uneven expansion of the glass tumbler"
   },
   {
-    q: "The method suitable for separating suspended particles in a liquid is _____",
-    a: ["Decantation", "Distillation", "Centrifugation", "Chromatography"],
-    correct: "Centrifugation",
-  },
-  {
-    q: "A hydrocarbon X has molar mass 26 and 92.3% carbon. What is its molecular formula?",
-    a: ["C₂H₂", "C₂H₆", "CH₄", "C₃H₈"],
-    correct: "C₂H₂",
-  },
-  {
-    q: "Silica gel, when exposed to air, turns liquid. What kind of substance is it?",
-    a: ["Deliquescent", "Hygroscopic", "Efflorescent", "Entropy"],
-    correct: "Deliquescent",
-  },
-  {
-    q: "In an equilibrium reaction, which condition indicates maximum yield of product?",
+    q: "Which of the following is the function of a p-n junction diode of a semiconductor device?",
     a: [
-      "Equilibrium constant is very large",
-      "ΔH = TΔS",
-      "ΔH ≥ TΔS",
-      "K < 0",
+      "It can be used to convert AC to DC",
+      "It can be used to convert DC to AC",
+      "It can be used to amplify the electric current",
+      "It can be used to step down the electric current"
     ],
-    correct: "Equilibrium constant is very large",
+    correct: "It can be used to convert AC to DC"
   },
   {
-    q: "Under high pressure, real gases do not obey gas laws because their molecules _____",
+    q: "Which of the following is true of a particle in stable equilibrium?",
+    a: ["Potential energy is constant", "Potential energy is maximum", "Potential energy is minimum", "Potential energy is zero"],
+    correct: "Potential energy is minimum"
+  },
+  {
+    q: "Determine the equivalent capacitance of the capacitors shown in the circuit.",
+    a: ["1.20μF", "6.00μF", "0.55μF", "1.33μF"],
+    correct: "1.33μF"
+  },
+  {
+    q: "The power factor of a series RLC circuit at resonance is",
+    a: ["0", "1", "π", "π/2"],
+    correct: "1"
+  },
+  {
+    q: "In the given circuit, what is the ammeter reading given that the voltages across the capacitor and inductor are 300 volts each?",
+    a: ["1.2A", "2.2A", "3.2A", "0.2A"],
+    correct: "2.2A"
+  },
+  {
+    q: "One of these is not an example of a mechanical wave?",
+    a: ["Sound waves", "Water waves", "Light waves", "Seismic wave"],
+    correct: "Light waves"
+  },
+  {
+    q: "Which of the following is a scalar quantity?",
+    a: ["Electric potential", "Electric field", "Angular momentum", "Linear momentum"],
+    correct: "Electric potential"
+  },
+  {
+    q: "Given three capacitors each of capacitance C. The resultant capacitance of 2C/3 can be obtained by",
     a: [
-      "Become more energetic",
-      "Have become less energetic",
-      "Become smaller",
-      "Become larger",
+      "Combining all in parallel",
+      "All in series",
+      "Two of them in series and in parallel with the third",
+      "Two in parallel and third in series with this combination"
     ],
-    correct: "Have become less energetic",
+    correct: "Two in parallel and third in series with this combination"
   },
   {
-    q: "The salt responsible for temporary hardness is _____",
+    q: "If two plane mirrors are positioned side by side, the number of images formed is 8. At what angle are they positioned?",
+    a: ["30°", "40°", "60°", "90°"],
+    correct: "40°"
+  },
+  {
+    q: "If the half-life of a particle is 4.5 days, how long will it decay to 3/4 of its original mass?",
+    a: ["9 days", "12 days", "15 days", "21 days"],
+    correct: "9 days"
+  },
+  {
+    q: "A transformer core is laminated to reduce _____",
+    a: ["Hysteresis loss", "Copper loss", "Eddy current loss", "Stray and dielectric losses"],
+    correct: "Eddy current loss"
+  },
+  {
+    q: "A glass rod is charged when rubbed with silk cloth because",
+    a: ["It transfers negative charge", "It transfers positive charges", "It accepts negative charges", "It accepts positive charges"],
+    correct: "It transfers negative charge"
+  },
+  {
+    q: "Addition of trivalent impurity to a semiconductor",
+    a: ["Increases the number of holes", "Decreases the number of holes", "Increases the number of free electrons", "Decreases the number of free electrons"],
+    correct: "Increases the number of holes"
+  },
+  {
+    q: "A charge of 1.6×10⁻¹⁹C is placed in a uniform electric field of intensity 1,200V/m. Calculate its acceleration if the mass of the charge is 9.1×10⁻³¹kg.",
+    a: ["2.11×10¹² m/s²", "2.11×10¹⁴ m/s²", "6.83×10¹² m/s²", "6.83×10¹⁴ m/s²"],
+    correct: "2.11×10¹⁴ m/s²"
+  },
+  {
+    q: "The defect of the eye lens which occurs when the ciliary muscles are weak is called _____",
+    a: ["Longsightedness", "Shortsightedness", "Presbyopia", "Astigmatism"],
+    correct: "Presbyopia"
+  },
+  {
+    q: "A light of 6.22eV is incident on a cadmium surface. If a stopping voltage of 2.1eV is required to reduce the photocurrent to zero, calculate the work function of cadmium in eV.",
+    a: ["4.07eV", "2.15eV", "6.22eV", "8.37eV"],
+    correct: "4.07eV"
+  },
+  {
+    q: "The fundamental frequency of an open organ pipe is the same as that of the second overtone of a closed organ pipe of length 0.2m. What is the length of the open organ pipe?",
+    a: ["0.132m", "0.160m", "0.125m", "0.080m"],
+    correct: "0.080m"
+  },
+  {
+    q: "What is the maximum possible wavelength in an open organ pipe of length a cm?",
+    a: ["a cm", "2a cm", "3a cm", "4a cm"],
+    correct: "2a cm"
+  },
+  {
+    q: "Mercury is used as a thermometric substance because (i) its specific heat is low (ii) it does not wet glass (iii) it is opaque",
+    a: ["i only", "i and ii only", "ii and iii only", "i, ii and iii"],
+    correct: "i, ii and iii"
+  },
+  {
+    q: "The magnetic field inside a solenoid is _____",
+    a: ["Non-uniform", "Uniform", "Zero", "Weak"],
+    correct: "Uniform"
+  },
+  {
+    q: "A gun with a muzzle velocity of 500m/s shoots a bullet at a bird 50m away. To hit the bird, the gun should be aimed (take g = 10m/s²)",
+    a: ["5cm high above the bird", "10cm high above the bird", "Directly towards", "15cm high above the bird"],
+    correct: "5cm high above the bird"
+  },
+  {
+    q: "If the distance between two suspended masses 50kg each is quadrupled, the gravitational force of attraction between them is",
+    a: ["Reduced by four", "Increased by four", "Increased by sixteen", "Reduced by sixteen"],
+    correct: "Reduced by sixteen"
+  },
+  {
+    q: "In a simple machine, the variation of the efficiency with load is _____",
+    a: ["A parabola", "A straight line", "A hyperbola", "Logarithmic"],
+    correct: "A parabola"
+  },
+  {
+    q: "Binding energy is _____",
     a: [
-      "Calcium sulphate",
-      "Magnesium chloride",
-      "Calcium bicarbonate",
-      "Magnesium sulphate",
+      "The amount of energy released when protons change energy level",
+      "The amount of energy released when electrons change energy levels",
+      "The amount of energy required to break a nucleus apart into protons and neutrons",
+      "The amount of energy required to break a nucleus apart into protons and electrons"
     ],
-    correct: "Calcium bicarbonate",
+    correct: "The amount of energy required to break a nucleus apart into protons and neutrons"
   },
   {
-    q: "Common salt (NaCl) is used to preserve foods. Which property determines its purity?",
-    a: ["Solubility", "Melting point", "Relative density", "Crystalline nature"],
-    correct: "Melting point",
+    q: "If the heat capacity of 100g of a substance is 3000JK⁻¹, what would be the heat capacity of 10g of the substance?",
+    a: ["30JK⁻¹", "300JK⁻¹", "30,000JK⁻¹", "3JK⁻¹"],
+    correct: "300JK⁻¹"
   },
   {
-    q: "The rate of a chemical reaction is NOT affected by one of these factors:",
-    a: ["Colour", "Concentration", "Light", "Surface area"],
-    correct: "Colour",
-  },
-  {
-    q: "The functional group represented in the compound below is _____",
-    a: ["Alkanol", "Alkanal", "Alkanone", "Alkanoate"],
-    correct: "Alkanal",
-  },
-  {
-    q: "On exposure to air, a hydrated salt loses its water of crystallization. This is called _____",
-    a: ["Efflorescence", "Deliquescence", "Hydroscopy", "Hydrolysis"],
-    correct: "Efflorescence",
-  },
-  {
-    q: "Which of the following statements is true of the electrochemical series?",
+    q: "Wooden ladles are commonly used domestically to scoop hot soup because of its",
     a: [
-      "Electropositivity of metals increases down the series",
-      "Electropositivity of non-metals decreases down the series",
-      "Electronegativity decreases",
-      "Electropositivity of metals decreases down the series",
+      "Good insulation of electricity",
+      "Good insulation of heat and electricity",
+      "Bad conduction of heat and electricity",
+      "Good insulation of heat"
     ],
-    correct: "Electropositivity of metals decreases down the series",
+    correct: "Good insulation of heat"
   },
   {
-    q: "Which of the following pairs are both deliquescent substances?",
+    q: "Which of these thermometers uses the volume of a fixed mass of liquid as its thermometric property?",
+    a: ["Mercury-in-glass thermometer", "Thermocouple thermometer", "Constant-volume gas thermometer", "Resistance thermometer"],
+    correct: "Mercury-in-glass thermometer"
+  },
+  {
+    q: "As pressure is increased,",
     a: [
-      "CaCl₂ and H₂SO₄",
-      "NaOH and MgSO₄·7H₂O",
-      "CaCl₂ and NaOH",
-      "CuO and NaCl",
+      "The melting point of ice decreases",
+      "The melting point of ice increases",
+      "The boiling point of water increases",
+      "No change in melting or boiling point"
     ],
-    correct: "CaCl₂ and NaOH",
+    correct: "The melting point of ice decreases"
   },
   {
-    q: "The bond formed between H₂O and H⁺ to form H₃O⁺ is _____",
-    a: ["Dative", "Covalent", "Electrovalent", "Ionic"],
-    correct: "Dative",
+    q: "Which of the following statements about the gamma ray is/are true? (i) It carries a negative charge (ii) It can be deflected by magnetic/electric fields (iii) It can be stopped by paper (iv) It has zero rest mass and a neutral charge",
+    a: ["(i) only", "(i) and (ii) only", "(ii) and (iv) only", "(iv) only"],
+    correct: "(iv) only"
   },
   {
-    q: "Gas molecules are said to be perfectly elastic because _____",
+    q: "A cyclist of mass 30kg exerts a force of 250N to move his bicycle. The acceleration produced is 4m/s². What is the frictional force between the road and the tires?",
+    a: ["200N", "120N", "130N", "180N"],
+    correct: "130N"
+  },
+  {
+    q: "The temperature of land rises more quickly than that of the sea because the specific heat of soil is",
+    a: ["More than that of water", "Less than that of water", "Equal to that of water", "Negligible"],
+    correct: "Less than that of water"
+  },
+  {
+    q: "Which of the following is a chemical change?",
     a: [
-      "They collide without loss of energy",
-      "They move in straight lines",
-      "Distances are negligible",
-      "Volume negligible",
+      "Melting of ice",
+      "Boiling of water",
+      "Rusting of iron",
+      "Breaking of glass"
     ],
-    correct: "They collide without loss of energy",
+    correct: "Rusting of iron"
   },
   {
-    q: "A solid that absorbs water from the atmosphere and forms an aqueous solution is _____",
-    a: ["Hydrophilic", "Efflorescent", "Deliquescent", "Hygroscopic"],
-    correct: "Deliquescent",
+    q: "What is the oxidation number of sulfur in H₂SO₄?",
+    a: ["+4", "+6", "-2", "0"],
+    correct: "+6"
   },
   {
-    q: "Which of the following can undergo both addition and substitution reactions?",
-    a: ["Benzene", "Pentane", "Propane", "Hexane"],
-    correct: "Benzene",
+    q: "Which of the following gases is not a greenhouse gas?",
+    a: ["CO₂", "CH₄", "N₂", "H₂O vapour"],
+    correct: "N₂"
   },
   {
-    q: "The correct name for CH₃(CH₂)₄CH₂CH₂NH₂ is _____",
-    a: ["Pentanamine", "Heptanamine", "Hexanamine", "Octanamine"],
-    correct: "Heptanamine",
+    q: "Which particle has the same number of protons and electrons but different number of neutrons?",
+    a: ["Isomer", "Isotope", "Ion", "Molecule"],
+    correct: "Isotope"
   },
   {
-    q: "2Cl⁻(aq) → Cl₂(g) + 2e⁻ represents which type of reaction?",
-    a: ["Ionization", "Oxidation", "Reduction", "Recombination"],
-    correct: "Oxidation",
+    q: "What is the molar volume of an ideal gas at STP?",
+    a: ["22.4 dm³", "24 dm³", "1.0 dm³", "2.24 dm³"],
+    correct: "22.4 dm³"
   },
   {
-    q: "CHCl₃ + Cl₂ → HCl + CCl₄ is an example of _____",
-    a: ["Addition", "Decomposition", "Substitution", "Condensation"],
-    correct: "Substitution",
-  },
-  {
-    q: "CxHy + 4O₂ → 3CO₂ + 2H₂O. The hydrocarbon CxHy is _____",
-    a: ["Butene", "Butane", "Butyne", "Butanone"],
-    correct: "Butane",
-  },
-  {
-    q: "To drive the position of equilibrium of an endothermic reaction forward:",
+    q: "Find the frequencies of the first three harmonics of a piano string of length 1.5m, if the velocity of the string is 120m/s.",
     a: [
-      "Increase temperature",
-      "Decrease pressure",
-      "Cool down",
-      "Decrease temperature",
+      "40Hz, 80Hz, 120Hz",
+      "180Hz, 360Hz, 540Hz",
+      "80Hz, 160Hz, 240Hz",
+      "360Hz, 180Hz, 90Hz"
     ],
-    correct: "Increase temperature",
+    correct: "40Hz, 80Hz, 120Hz"
   },
   {
-    q: "0.92g of ethanol raised 50g of water by 28.6K. Calculate the heat of combustion.",
-    a: ["+3000 kJ mol⁻¹", "+300 kJ mol⁻¹", "−300 kJ mol⁻¹", "−3000 kJ mol⁻¹"],
-    correct: "−300 kJ mol⁻¹",
+    q: "Two forces whose resultant is 100N are at right angles to each other. If one of them makes an angle of 30° with the resultant, find the magnitude of the other force.",
+    a: ["8.66N", "86.6N", "50.0N", "5.0N"],
+    correct: "50.0N"
   },
   {
-    q: "The repeating unit in natural rubber is _____",
-    a: ["Alkyne", "Isoprene", "n-propene", "Neoprene"],
-    correct: "Isoprene",
+    q: "A body of weight W N rests on a smooth plane inclined at an angle θ° to the horizontal. The component of the weight down the slope is",
+    a: ["Wsinθ", "Wcosθ", "Wtanθ", "Wsecθ"],
+    correct: "Wsinθ"
   },
   {
-    q: "What current will deposit 2.7g of Al in 2 hours? [Al = 27, F = 96500 C mol⁻¹]",
-    a: ["32", "8", "4", "16"],
-    correct: "4",
+    q: "A body of mass 100g moves with a velocity of 10.0ms⁻¹ and collides with a wall. After the collision, the body moves with a velocity of 2.0ms⁻¹ in the opposite direction. The change in momentum is",
+    a: ["8.0Ns", "1.2Ns", "12.0Ns", "80Ns"],
+    correct: "1.2Ns"
   },
   {
-    q: "Steam changes the colour of anhydrous cobalt(II) chloride from _____",
-    a: ["Blue to pink", "Red to white", "White to green", "White to blue"],
-    correct: "Blue to pink",
+    q: "A 12V battery supplying a current of 20A was used to melt 1.5kg of ice at 0°C. Calculate the time required if the latent heat of fusion of ice is 336×10³ J/kg.",
+    a: ["35.0min", "3.5min", "76min", "21.0min"],
+    correct: "35.0min"
   },
   {
-    q: "Which of the following will change when a catalyst is added to a reaction?",
+    q: "The light from the sun reaches the earth mainly by",
+    a: ["convection", "conduction", "radiation", "reflection"],
+    correct: "radiation"
+  },
+  {
+    q: "One valid assumption of the kinetic theory of gases is that",
     a: [
-      "Activation energy",
-      "Potential energy of reactants",
-      "Heat of reaction",
-      "Potential energy of products",
+      "the molecules are in random motion and the number of collisions is constant",
+      "the number of molecules increases with the pressure",
+      "the molecules of the gas are all identical and are very small in size",
+      "the number of molecules increases with temperature"
     ],
-    correct: "Activation energy",
+    correct: "the molecules of the gas are all identical and are very small in size"
   },
   {
-    q: "Which of the following is used to study the arrangement of particles in crystal lattices?",
+    q: "An astronomical telescope is said to be in normal adjustment when the",
     a: [
-      "A. Alpha-particles",
-      "B. Beta-particles",
-      "C. Gamma-rays",
-      "D. X-rays"
+      "eye is accommodated",
+      "focal length of objective lens is longer than that of the eye piece",
+      "final image is at the near point of the eye",
+      "final image is at infinity"
     ],
-    correct: "D. X-rays"
+    correct: "final image is at infinity"
   },
   {
-    q: "I. It has a varied composition from one place to another.\nII. Its constituents can be separated by physical means.\nIII. It contains unreactive noble gases.\nWhich of the above shows that air is a mixture?",
+    q: "Dispersion of light by a glass prism is due to the",
     a: [
-      "A. I and II only",
-      "B. II and III only",
-      "C. I and III only",
-      "D. I, II and III"
+      "different hidden colours of the glass",
+      "different speeds of the various colours in glass",
+      "defects in the glass",
+      "high density of glass"
     ],
-    correct: "A. I and II only"
+    correct: "different speeds of the various colours in glass"
   },
   {
-    q: "The chemicals used to soften hard water involves the addition of:",
+    q: "A guitar string of length 33cm is under a tension of 55N. If the fundamental frequency is 196Hz, find the speed of wave on the string.",
+    a: ["6m/s", "0.33m/s", "129m/s", "726m/s"],
+    correct: "129m/s"
+  },
+  
+  {
+    q: "A transformer has 400 turns as its primary winding and 100 turns as secondary winding. If the primary coil is connected to a 12V source, the transformer functions as",
     a: [
-      "A. Insoluble sodium compounds which form soluble solutions of calcium and magnesium",
-      "B. Soluble sodium compounds which form soluble solutions of calcium and magnesium ions",
-      "C. Soluble sodium compounds which form insoluble precipitates of calcium and magnesium ions",
-      "D. Insoluble precipitates of calcium and magnesium ions"
+      "a step down transformer with secondary emf = 6V",
+      "a step down transformer with secondary emf = 3V",
+      "a step up transformer with secondary emf = 24V",
+      "a step up transformer with secondary emf = 48V"
     ],
-    correct: "C. Soluble sodium compounds which form insoluble precipitates of calcium and magnesium ions"
+    correct: "a step down transformer with secondary emf = 3V"
   },
   {
-    q: "Chlorination of water for town supply is carried out to:",
-    a: [
-      "A. Make the water colourless",
-      "B. Remove germs from the water",
-      "C. Make the water tasteful",
-      "D. Remove odour from the water"
-    ],
-    correct: "B. Remove germs from the water"
+    q: "Which of the following is NOT conserved in an inelastic collision?",
+    a: ["momentum", "mass", "kinetic energy", "total energy"],
+    correct: "kinetic energy"
   },
   {
-    q: "The radioisotope used in industrial radiography for the rapid checking of faults in welds and castings is:",
-    a: [
-      "A. Carbon-14",
-      "B. Phosphorus-32",
-      "C. Cobalt-60",
-      "D. Iodine-131"
-    ],
-    correct: "C. Cobalt-60"
+    q: "A series RLC circuit has a resistance of 50.0Ω, a capacitance of 6.00 nF, and an inductance of 28.0 mH. The circuit is connected to a wide-range, adjustable frequency voltage source with an output of 25.0 V. What is the resonance frequency of the circuit?",
+    a: ["12.3 KHz", "12.3 Hz", "12.3 mHz", "12.3 μHz"],
+    correct: "12.3 KHz"
   },
   {
-    q: "How many unpaired electrons are in the p-orbitals of a fluorine atom?",
-    a: [
-      "A. 3",
-      "B. 0",
-      "C. 1",
-      "D. 2"
-    ],
-    correct: "C. 1"
+    q: "The area under a force-distance graph represents",
+    a: ["acceleration", "velocity", "work", "momentum"],
+    correct: "work"
   },
   {
-    q: "The radioactive emission with the least ionization power is:",
-    a: [
-      "A. α-particles",
-      "B. X-rays",
-      "C. γ-rays",
-      "D. β-particles"
-    ],
-    correct: "C. γ-rays"
-  },
-  {
-    q: "The shape of the carbon (IV) oxide molecule is:",
-    a: [
-      "A. Pyramidal",
-      "B. Linear",
-      "C. Angular",
-      "D. Tetrahedral"
-    ],
-    correct: "B. Linear"
-  },
-  {
-    q: "Which of the following molecules is held together by hydrogen bond?",
-    a: [
-      "A. CH₄",
-      "B. HBr",
-      "C. H₂SO₄",
-      "D. HF"
-    ],
-    correct: "D. HF"
-  },
-  {
-    q: "A solid that absorbs water from the atmosphere and forms an aqueous solution is _____",
-    a: ["Hydrophilic", "Efflorescent", "Deliquescent", "Hygroscopic"],
-    correct: "Deliquescent",
+    q: "Determine the inductive reactance when a 30.0mH inductor with negligible resistance is connected to a 1.3KHz oscillator.",
+    a: ["39.0Ω", "122.5Ω", "245.0Ω", "39KΩ"],
+    correct: "245.0Ω"
   }
 ];
 
