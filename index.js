@@ -327,12 +327,7 @@ const questions = [
   { q: "Please if you come .......... my brother in town, inform him", 
     a: ["over", "across", "through", "after"], 
     correct: "across" 
-  },
-
-  { q: "Charles quickly got a match and struck it on ……… sole of my shoe", 
-    a: ["this", "the", "a", "each"], 
-    correct: "the" 
-  } 
+  }
 ];
 startBtn.addEventListener("click", startQuiz);
 nextBtn.addEventListener("click", nextQuestion);
@@ -351,7 +346,7 @@ function startQuiz() {
   quizBox.classList.remove("hide");
   currentQuestion = 0;
   score = 0;
-  timeLeft = 20;
+  timeLeft = 12;
   showQuestion();
   startTimer();
 
@@ -391,7 +386,7 @@ function nextQuestion() {
   currentQuestion++;
   if (currentQuestion < questions.length) {
     nextBtn.classList.add("hide");
-    timeLeft = 20;
+    timeLeft = 12;
     showQuestion();
     startTimer();
   } else {
