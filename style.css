@@ -123,7 +123,7 @@ button:hover {
 }
 #toast-container {
     position: fixed;
-    top: 180px;
+    top: 20px;
     right: 20px;
     z-index: 2000;
     display: flex;
@@ -135,13 +135,13 @@ button:hover {
     padding: 1rem 1.5rem;
     background: #333;
     color: white;
-    border-radius: 8px;
+    border-radius: 25% 10%;
     font-size: 0.9rem;
     display: flex;
     align-items: center;
     gap: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    animation: slideIn 0.6s ease forwards;
+    animation: slideIn 0.4s ease forwards;
     opacity: 0;
 }
 
@@ -156,21 +156,16 @@ button:hover {
 .toast.info {
     background: #3498db;
 }
-.name {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.name2 {
-  text-transform: uppercase;
-}
 
 @keyframes slideIn {
-    from { opacity: 0; transform: translateY(-50px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; transform: translateX(50px); }
+}
+.wow {
+  text-transform: uppercase;
 }

@@ -415,8 +415,7 @@ function showResult() {
   resultBox.innerHTML = `<div class="name"> 
     <h2>Quiz Completed 👍</h2>
     <p>Your Final Score: <span id="score">${score}</span> / ${questions.length}</p>
-    <p>Thanks for playing <span class="name2">${playerName}!</span></p>
-    </div>
+    <p>Thanks for playing <span class="wow">${playerName}!</span></p>
     `;
 
   const categoryText = document.createElement("p");
@@ -468,18 +467,6 @@ quizBox.classList.remove("hide");
 nextBtn.classList.add("hide");
 startQuiz();
 }
-/*resultBox.classList.add("hide");
-quizBox.classList.remove("hide");
-//to reset values
-currentQuestion = 0;
-score = 0;
-clearInterval(timer);
-
-scoreDisplay.textContent = score;
-//start quiz again 
-loadQuestion();
-startTimer();
-*/
 function showToast(message, type = "success") {
     console.log("Toast call function");
     const container = document.getElementById("toast-container");
@@ -494,4 +481,4 @@ function showToast(message, type = "success") {
         toast.style.animation = "fadeOut 0.5s forwards";
         setTimeout(() => toast.remove(), 500);
     }, 3000);
-}
+  };
