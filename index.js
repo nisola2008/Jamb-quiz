@@ -362,16 +362,4 @@ function showToast(message, type = "success") {
         toast.style.animation = "fadeOut 0.5s forwards";
         setTimeout(() => toast.remove(), 500);
     }, 3000);
-  }
-/*resultBox.classList.add("hide");
-quizBox.classList.remove("hide");
-//to reset values
-currentQuestion = 0;
-score = 0;
-clearInterval(timer);
-
-scoreDisplay.textContent = score;
-//start quiz again 
-loadQuestion();
-startTimer();
-*/
+  };
