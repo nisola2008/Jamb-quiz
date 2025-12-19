@@ -226,11 +226,11 @@ function startQuiz() {
 
   playerName = nameInput.value.trim();
   if(playerName == "") {
-    alert("Please enter your name!");
+    showToast("Please enter your name!");
     return;
   }
   else if (playerName.length < 5) {
-    alert("Please enter at least 5 characters");
+    showToast("Please enter at least 5 characters");
     return;
   }
   startScreen.classList.add("hide");
@@ -306,7 +306,7 @@ function showResult() {
   resultBox.innerHTML = ` 
     <h2>Quiz Completed 👍</h2>
     <p>Your Final Score: <span id="score">${score}</span> / ${questions.length}</p>
-    <p>Thanks for playing!</p>
+    <p>Thanks for playing <span class="wow">${playerName}!</span></p>
     `;
 
   const categoryText = document.createElement("p");
@@ -348,6 +348,21 @@ quizBox.classList.remove("hide");
 nextBtn.classList.add("hide");
 startQuiz();
 }
+function showToast(message, type = "success") {
+    console.log("Toast call function");
+    const container = document.getElementById("toast-container");
+
+    const toast = document.createElement("div");
+    toast.classList.add("toast", type);
+    toast.innerHTML = message;
+
+    container.appendChild(toast);
+
+    setTimeout(() => {
+        toast.style.animation = "fadeOut 0.5s forwards";
+        setTimeout(() => toast.remove(), 500);
+    }, 3000);
+  }
 /*resultBox.classList.add("hide");
 quizBox.classList.remove("hide");
 //to reset values
