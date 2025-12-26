@@ -19,204 +19,319 @@ let playerName = "";
 
 const questions = [
   {
-    q: "The mode of nutrition in which digestion is extracellular is _____",
-    a: ["Saprophytic", "Parasitic", "Holophytic", "Holozoic"],
-    correct: "Saprophytic"
+    q: "Which of the following substances is used for road surfacing?",
+    a: ["Bitumen", "Coal tar", "Kerosene", "Diesel"],
+    correct: "Bitumen"
   },
   {
-    q: "Emergent trees are at _____ layer of the forest",
-    a: ["Upper", "Lower", "Canopy", "Understory"],
-    correct: "Upper"
+    q: "The name of the compound CH₂Br-CH₂-CH(Cl)-CH₂-CH₂Br is _____",
+    a: [
+      "1,5-dibromo-2-chloropentane",
+      "1,1-dibromo-2-chloropentane",
+      "1,1-dibromo-4-chloropentane",
+      "1-bromo-4-chloropentane"
+    ],
+    correct: "1,5-dibromo-2-chloropentane"
   },
   {
-    q: "The principle of survival of the fittest is regarded as _____",
-    a: ["Darwinism", "Lamarckism", "Mendelism", "Naturalism"],
-    correct: "Darwinism"
+    q: "The process that converts ethanol to ethanoic acid is _____",
+    a: ["Combustion", "Oxidation", "Halogenation", "Reduction"],
+    correct: "Oxidation"
   },
   {
-    q: "An example of Estuarine habitat is _____",
-    a: ["Pond", "Lagoon", "Ocean", "Lake"],
-    correct: "Lagoon"
+    q: "In electroplating steel with chromium, the cathode is _____",
+    a: ["Chromium", "Steel", "Iron", "Copper"],
+    correct: "Steel"
   },
   {
-    q: "An edaphic factor of growth of plants is _____",
-    a: ["Soil PH", "Temperature", "Light intensity", "Humidity"],
-    correct: "Soil PH"
+    q: "When monoclinic sulphur is cooled below its transition temperature, it _____",
+    a: [
+      "Freezes",
+      "Crumbles",
+      "Changes to rhombic sulphur",
+      "Evaporates"
+    ],
+    correct: "Changes to rhombic sulphur"
   },
   {
-    q: "What is the relationship between cattle and cattle egret?",
-    a: ["Commensalism", "Mutualism", "Parasitism", "Competition"],
-    correct: "Commensalism"
+    q: "The bond that exists in oxonium ions are _____",
+    a: [
+      "Covalent and dative",
+      "Covalent and ionic",
+      "Dative and ionic",
+      "Metallic and dative"
+    ],
+    correct: "Covalent and dative"
   },
   {
-    q: "Inbreed crossing refers to the breeding of _____",
-    a: ["Unrelated species", "Closely related species", "Species with different habitats", "Genetically modified organisms"],
-    correct: "Closely related species"
+    q: "The property of butane and propane that makes them suitable for cooking is _____",
+    a: ["Diffusion", "Solubility", "Boiling", "Colour"],
+    correct: "Boiling"
   },
   {
-    q: "A man of AS genotype marries a woman of AS genotype, what is the probability of having a sickle cell anemia offspring?",
-    a: ["0%", "25%", "50%", "100%"],
-    correct: "25%"
+    q: "The structure of diamond is _____",
+    a: ["Cubic", "Hexagonal", "Tetrahedral", "Trigonal"],
+    correct: "Tetrahedral"
   },
   {
-    q: "The effect of the lack of vascular roots of a bryophyte is _____",
-    a: ["Reduced water absorption", "Efficient nutrient transport", "Unlimited growth potential", "Improved structural support"],
-    correct: "Reduced water absorption"
+    q: "Which of the following are secondary air pollutants?",
+    a: [
+      "Ozone and SO₂",
+      "Ozone and CO₂",
+      "Ozone and NO₂",
+      "NO and SO₂"
+    ],
+    correct: "Ozone and NO₂"
   },
   {
-    q: "The national park of Nigeria is located at _____",
-    a: ["Ogun state", "Lagos state", "Cross River State", "Yobe State"],
-    correct: "Cross River State"
+    q: "During the preparation of ethene, it is passed through _____ to remove impurities",
+    a: ["NaHCO₃", "NaOH", "K₂CO₃", "Water"],
+    correct: "NaOH"
   },
   {
-    q: "A criminal can be traced through which of the following?",
-    a: ["Blood group", "Fingerprint", "Genotype", "Shoe size"],
-    correct: "Fingerprint"
+    q: "The technique commonly used in the purification of solids is _____",
+    a: ["Chromatography", "Crystallization", "Centrifugation", "Nitrogen"],
+    correct: "Crystallization"
   },
   {
-    q: "The vegetative part of a plant is _____",
-    a: ["Leaves", "Flowers", "Stems", "Root"],
-    correct: "Leaves"
+    q: "The presence of impurity in a substance will cause the melting point to _____",
+    a: ["Reduce", "Increase", "Be stable", "Be zero"],
+    correct: "Reduce"
   },
   {
-    q: "The immature fruits of opium poppy are _____",
-    a: ["Capsules", "Berries", "Drupes", "Achenes"],
-    correct: "Capsules"
+    q: "Which of these is used in the manufacture of cosmetics?",
+    a: ["Toluene", "Phenol", "Ethene", "Ethane"],
+    correct: "Phenol"
   },
   {
-    q: "Pneumatophores developed by white mangroves are used for _____",
-    a: ["Gaseous exchange", "Anchoring the plant in the soil", "Storing water", "Photosynthesis"],
-    correct: "Gaseous exchange"
+    q: "Which of these metals will liberate hydrogen from steam?",
+    a: ["Copper", "Iron", "Mercury", "Gold"],
+    correct: "Iron"
   },
   {
-    q: "Which type of cartilage is found in the external ear, epiglottis and larynx?",
-    a: ["Hyaline cartilage", "Fibrocartilage", "Elastic cartilage", "None of the above"],
-    correct: "Elastic cartilage"
+    q: "The electronic configuration of Na⁺ is _____",
+    a: [
+      "1s²2s²2p⁶3s¹",
+      "1s²2s²2p⁶",
+      "1s²2s²2p⁶3s²",
+      "None of the above"
+    ],
+    correct: "1s²2s²2p⁶"
   },
   {
-    q: "Which of these lacks a true nucleus?",
-    a: ["Amoeba", "Moss", "Rhizopus", "Bacteria"],
-    correct: "Bacteria"
+    q: "If 50 cm³ of hydrogen reacts with 75 cm³ of oxygen, the volume of unreacted oxygen is _____",
+    a: ["50 cm³", "25 cm³", "30 cm³", "100 cm³"],
+    correct: "50 cm³"
   },
   {
-    q: "Arthropods are distinguished from vertebrates because they possess _____",
-    a: ["Bones", "Chitin", "Feathers", "Scales"],
-    correct: "Chitin"
+    q: "An example of a homogeneous mixture is _____",
+    a: ["Colloids", "Sols", "Emulsion", "Solution"],
+    correct: "Solution"
   },
   {
-    q: "Digested food in the body is transported by _____",
-    a: ["White blood cells (WBC)", "Red blood cells (RBC)", "Platelets", "Plasma"],
-    correct: "Plasma"
+    q: "Which technique would be used in a food industry?",
+    a: [
+      "Distillation",
+      "Chromatography",
+      "Filtration",
+      "Fractional distillation"
+    ],
+    correct: "Filtration"
   },
   {
-    q: "The breeding of related species is known as _____",
-    a: ["Inbreeding", "Self-breeding", "Outbreeding", "Cross breeding"],
-    correct: "Inbreeding"
+    q: "H⁺ + OH⁻ → H₂O is an example of _____ reaction",
+    a: [
+      "Crystallization",
+      "Precipitation",
+      "Neutralization",
+      "Double decomposition"
+    ],
+    correct: "Neutralization"
   },
   {
-    q: "Unicellular organisms are mostly found among _____",
-    a: ["Plants", "Animals", "Microorganisms", "Viruses"],
-    correct: "Microorganisms"
+    q: "When methane burns in excess air, it gives _____",
+    a: ["CO", "CO₂", "O₂", "CO₂ + H₂O"],
+    correct: "CO₂ + H₂O"
   },
   {
-    q: "The aphotic zone is characterized by _____",
-    a: ["Absence of light", "Constant sunlight", "High temperature", "High oxygen levels"],
-    correct: "Absence of light"
+    q: "Which process will result in a chemical change?",
+    a: [
+      "Addition of salt to water",
+      "Evaporation of water",
+      "Copper(II) oxide mixed with tetraoxosulphate(VI) acid",
+      "Melting of candle"
+    ],
+    correct: "Copper(II) oxide mixed with tetraoxosulphate(VI) acid"
   },
   {
-    q: "Plants in a mangrove swamp have _____",
-    a: ["Spines", "Breathing roots", "Thick stems", "Large leaves"],
-    correct: "Breathing roots"
+    q: "Which method is used to obtain alkanol from alkene?",
+    a: ["Dehydration", "Hydrolysis", "Hydration", "Fermentation"],
+    correct: "Hydration"
   },
   {
-    q: "The highest energy level is found in _____",
-    a: ["Carbohydrates", "Proteins", "Fats and oil", "Water"],
-    correct: "Fats and oil"
+    q: "What is the anode in aluminium extraction?",
+    a: [
+      "Iron, reduction",
+      "Graphite, oxidation",
+      "Graphite, reduction",
+      "Iron, oxidation"
+    ],
+    correct: "Graphite, oxidation"
   },
   {
-    q: "What is the relationship between zebra and lion?",
-    a: ["Parasitism", "Predation", "Symbiosis", "Commensalism"],
-    correct: "Predation"
+    q: "All these are natural air pollutants except _____",
+    a: ["CO", "NO", "O₂", "SO₂"],
+    correct: "O₂"
   },
   {
-    q: "Which of the following is an example of genetic variation?",
-    a: ["Person's hair color", "A person's haircut", "A person's clothing style", "A person's shoe size"],
-    correct: "Person's hair color"
+    q: "Which is not evidence of particulate nature of matter?",
+    a: ["Diffusion", "Osmosis", "Dilution", "Crystallization"],
+    correct: "Crystallization"
   },
   {
-    q: "Which of the following is an example of continuous variation?",
-    a: ["Height in humans", "Blood type in humans", "Flower color in plants", "Fur pattern in animals"],
-    correct: "Height in humans"
+    q: "What element is common to permalloy, steel and alnico?",
+    a: ["Carbon", "Iron", "Silicon", "Aluminium"],
+    correct: "Iron"
   },
   {
-    q: "The mixture of fresh water and sea water is called _____",
-    a: ["Brackish water", "Saline water", "Potable water", "Fresh water"],
-    correct: "Brackish water"
+    q: "The method of preparing a salt depends on its _____",
+    a: ["Colour", "Density", "Solubility", "None"],
+    correct: "Solubility"
   },
   {
-    q: "A tree growing with broad and ever-green leaves is likely located in _____",
-    a: ["A tropical rainforest", "A desert biome", "A tundra ecosystem", "A deciduous forest"],
-    correct: "A tropical rainforest"
+    q: "The bonds in naphthalene molecules are _____",
+    a: ["Ionic", "Metallic", "Dative", "Van der Waals"],
+    correct: "Van der Waals"
   },
   {
-    q: "Which inorganic material is needed for photosynthesis?",
-    a: ["Oxygen", "Carbon dioxide", "Nitrogen", "Iron"],
-    correct: "Carbon dioxide"
+    q: "Addition of charcoal in water purification is to _____",
+    a: [
+      "Prevent goitre",
+      "Prevent tooth decay",
+      "Kill germs",
+      "Remove odour"
+    ],
+    correct: "Remove odour"
   },
   {
-    q: "What is the excretory organ of the earthworm?",
-    a: ["Kidneys", "Malpighian tubules", "Nephridia", "Lungs"],
-    correct: "Nephridia"
+    q: "How many isomers does C₂H₄Br₂ have?",
+    a: ["2", "3", "5", "4"],
+    correct: "2"
   },
   {
-    q: "Opium poppy produces _____",
-    a: ["Nicotine", "Quinine", "Morphine", "Caffeine"],
-    correct: "Morphine"
+    q: "What bond is present in hydrated copper(II) ions?",
+    a: ["Electrovalent", "Dative", "Covalent", "Metallic"],
+    correct: "Dative"
   },
   {
-    q: "Agglutination occurs when blood is passed from blood group _____",
-    a: ["A to AB", "AB to A", "O to AB", "O to A"],
-    correct: "AB to A"
+    q: "Which gas burns with a blue flame?",
+    a: ["SO₂", "H₂S", "HCl", "NO₂"],
+    correct: "H₂S"
   },
   {
-    q: "The part of the fish's body that is sensitive to vibration is _____",
-    a: ["Lateral fin", "Dorsal fin", "Gills", "Tail fin"],
-    correct: "Lateral fin"
+    q: "Silicon(IV) oxide when cooled after melting forms _____",
+    a: [
+      "Flint glass",
+      "Coloured glass",
+      "Quartz glass",
+      "Heat resistant glass"
+    ],
+    correct: "Quartz glass"
   },
   {
-    q: "The bird (Woodpecker) performs which activity?",
-    a: ["Captures fast-moving prey in flight", "Probes for insects hidden in tree bark", "Sips nectar", "Catches fish in shallow water"],
-    correct: "Probes for insects hidden in tree bark"
+    q: "Which of the following pairs are oxidizing agents?",
+    a: [
+      "Chlorine and bromine",
+      "Chlorine and hydrogen sulphide",
+      "Hydrogen and oxygen",
+      "Iron and sulphur(IV) oxide"
+    ],
+    correct: "Chlorine and bromine"
   },
   {
-    q: "Which type of cartilage provides a smooth surface for joint movement and is commonly found in the ribs, trachea and bronchi?",
-    a: ["Fibrocartilage", "Elastic cartilage", "Hyaline cartilage", "Articular cartilage"],
-    correct: "Hyaline cartilage"
+    q: "Which of the following particles has the least mass?",
+    a: ["Proton", "Neutron", "Electron", "Alpha particle"],
+    correct: "Electron"
   },
   {
-    q: "The pectoral fin is the part labelled _____",
-    a: ["IV", "VII", "V", "III"],
-    correct: "VII"
+    q: "Which of the following is used as a drying agent for ammonia gas?",
+    a: ["Concentrated H₂SO₄", "Calcium oxide", "Anhydrous CaCl₂", "Silica gel"],
+    correct: "Calcium oxide"
   },
   {
-    q: "Most cells in higher animals retain their power of cell division except _____",
-    a: ["Lymphocytes", "Malpighian cells", "Nerve cells", "Germ cells"],
-    correct: "Nerve cells"
+    q: "Which of the following is a strong electrolyte?",
+    a: ["Glucose", "Ethanol", "Sodium chloride", "Acetic acid"],
+    correct: "Sodium chloride"
   },
   {
-    q: "The function of ribosomes in cells is _____",
-    a: ["Protein synthesis", "Starch synthesis", "Lipid storage", "Transport of materials"],
-    correct: "Protein synthesis"
+    q: "The gas that turns moist blue litmus paper red is _____",
+    a: ["Ammonia", "Carbon dioxide", "Hydrogen chloride", "Oxygen"],
+    correct: "Hydrogen chloride"
   },
   {
-    q: "The membrane surrounding the vacuole in plants is called _____",
-    a: ["Plasmalemma", "Tonoplast", "Sarcolemma", "Nuclear membrane"],
-    correct: "Tonoplast"
+    q: "Which of the following is an example of a covalent compound?",
+    a: ["NaCl", "MgO", "H₂O", "KBr"],
+    correct: "H₂O"
   },
   {
-    q: "A man of AS genotype marries a woman of AS genotype, what is the probability of having a sickle cell anemia offspring?",
-    a: ["0%", "25%", "50%", "100%"],
-    correct: "25%"
+    q: "The rusting of iron is an example of _____",
+    a: ["Oxidation", "Reduction", "Neutralization", "Hydrolysis"],
+    correct: "Oxidation"
+  },
+  {
+    q: "Which of the following gases is collected over water?",
+    a: ["Ammonia", "Hydrogen chloride", "Sulphur dioxide", "Oxygen"],
+    correct: "Oxygen"
+  },
+  {
+    q: "What is the pH of a neutral solution at room temperature?",
+    a: ["0", "7", "10", "14"],
+    correct: "7"
+  },
+  {
+    q: "Which of the following metals is extracted by electrolysis?",
+    a: ["Iron", "Copper", "Aluminium", "Zinc"],
+    correct: "Aluminium"
+  },
+  {
+    q: "Which of the following substances is amphoteric?",
+    a: ["NaOH", "HCl", "Al₂O₃", "NH₃"],
+    correct: "Al₂O₃"
+  },
+  {
+    q: "Which of the following indicators is suitable for strong acid–strong base titration?",
+    a: ["Methyl orange", "Litmus", "Phenolphthalein", "All of the above"],
+    correct: "All of the above"
+  },
+  {
+    q: "Which of the following is not a fossil fuel?",
+    a: ["Coal", "Petroleum", "Natural gas", "Charcoal"],
+    correct: "Charcoal"
+  },
+  {
+    q: "The process by which solid changes directly to gas is called _____",
+    a: ["Melting", "Sublimation", "Evaporation", "Condensation"],
+    correct: "Sublimation"
+  },
+  {
+    q: "Which of the following compounds will undergo addition reaction?",
+    a: ["Ethane", "Ethene", "Methane", "Propane"],
+    correct: "Ethene"
+  },
+  {
+    q: "Which of the following is responsible for temporary hardness of water?",
+    a: ["Calcium chloride", "Calcium carbonate", "Calcium hydrogencarbonate", "Sodium carbonate"],
+    correct: "Calcium hydrogencarbonate"
+  },
+  {
+    q: "Which of the following pairs are oxidizing agents?",
+    a: [
+      "Chlorine and bromine",
+      "Chlorine and hydrogen sulphide",
+      "Hydrogen and oxygen",
+      "Iron and sulphur(IV) oxide"
+    ],
+    correct: "Chlorine and bromine"
   },
 ];
 
@@ -232,6 +347,9 @@ function startQuiz() {
   else if (playerName.length < 5) {
     showToast("Please enter at least 5 characters");
     return;
+  }
+  else{
+    showToast("Login Successful");
   }
   startScreen.classList.add("hide");
   quizBox.classList.remove("hide");
@@ -316,12 +434,14 @@ function showResult() {
     categoryText.textContent = "Poor 😢 – You need more practice OLODO!";
   } else if (score <= 20) {
     categoryText.textContent = "Fair 🙂 – You can do better READ!";
-  } else if (score <= 29) {
+  } else if (score <= 30) {
     categoryText.textContent = "Good 👍 – Nice effort MORE EFFORT!";
   } else if (score <= 35) {
     categoryText.textContent = "Excellent 🔥 – You really know your stuff BRAINBOX!";
-  } else if (score === 40) {
+  } else if (score <= 40) {
     categoryText.textContent = "Wow 🎯 – Genius level GURU!";
+  } else if (score == 50) {
+    categoryText.textContent = "Father of CHEMISTRY";
   }
 
   resultBox.appendChild(categoryText);
